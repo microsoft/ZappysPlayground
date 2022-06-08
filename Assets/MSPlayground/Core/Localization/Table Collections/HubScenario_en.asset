@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: HubScenario_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: e2690f4db1ee4a34c86b296ec1231702, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 1806174074859520
+    m_Localized: No saved anchors to locate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360277876736
+    m_Localized: So, what should we call you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360370151424
+    m_Localized: Welcome back. Should we still call you {global.username}?
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5167360370151425
+    m_Localized: Enter Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360370151426
+    m_Localized: Skip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360370151427
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360370151428
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7203479452020736
+    m_Localized: Scanning Progress = {progress}
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7203479506546688
+    m_Localized: Great, now we have an understanding of your environment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7203479506546689
+    m_Localized: Accept
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7203479506546690
+    m_Localized: Rescan Space
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9393201960087552
+    m_Localized: Welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9393202006224896
+    m_Localized: 'Searching for Spatial Anchors... '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9393202006224897
+    m_Localized: Saving Anchors.  Look around your space.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9396408480329728
+    m_Localized: "It looks like your environment has changed. Let\u2019s rescan your
+      space."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9399155812364288
+    m_Localized: "Next, let\u2019s understand your space. For an optimal experience,
+      prepare a tabletop surface clear of objects.<br><br>Look at the gems to make
+      them grow."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9422694212857856
+    m_Localized: "It looks like your environment has changed. Let\u2019s rescan your
+      space."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10127645514272768
+    m_Localized: "Welcome to Playground. Here you\u2019ll explore the features of
+      the Mixed Reality Toolkit, and get access to code samples you can use in your
+      own projects.<br><br>\nWhen you see a green MRTK feature tile, gaze at it for
+      more info. Try it now."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10127645526855680
+    m_Localized: Checking for spatial anchors. Have a look around your environment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10127645531049984
+    m_Localized: Environment Scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10127645531049985
+    m_Localized: 'This space looks familiar! Do you want to continue or rescan your
+      space? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10507161080303616
+    m_Localized: Room Scan Complete
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00104ad7af5b12000070e2c186971900

@@ -1,0 +1,22 @@
+<linker>
+  <!--
+    This link.xml file is provided to prevent MRTK code from being optimized away
+    during IL2CPP builds. More details on when this is needed and why this is needed
+    can be found here: https://github.com/microsoft/MixedRealityToolkit-Unity/issues/5273
+    If your application doesn't use some specific assemblies, it is possible to remove their corresponding lines down
+    below (in the previous example, we would remove the TeleportSystem below).
+    It's recommended to start with this list and narrow down if you want to ensure
+    specific bits of code get optimized away.
+  -->
+  <assembly fullname="Microsoft.MixedReality.Toolkit" preserve="all" ignoreIfMissing="1" />
+  <!-- Core -->
+  <assembly fullname="Microsoft.MixedReality.Toolkit.Utilities" preserve="all" ignoreIfMissing="1" />
+  <!-- Environment (Boundary, SpatialMesh) -->
+  <assembly fullname="Microsoft.MixedReality.Toolkit.Environment" preserve="all" ignoreIfMissing="1" />
+  <!-- Input (Hands) -->
+  <assembly fullname="Microsoft.MixedReality.Toolkit.Input" preserve="all" ignoreIfMissing="1" />
+  <!-- CoreUX (Buttons) -->
+  <assembly fullname="Microsoft.MixedReality.Toolkit.CoreUX" preserve="all" ignoreIfMissing="1" />
+  <!-- Performance -->
+  <assembly fullname="Microsoft.MixedReality.Toolkit.Performance" preserve="all" ignoreIfMissing="1" />
+</linker>

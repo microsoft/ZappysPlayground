@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-PalmMenu
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Hand Menu with Hand Constraint Palm Up (Solver)
+  sections:
+  - heading: 
+    text: Hand Menus allow you to quickly bring up hand-attached UI. This UI is accessible
+      anytime and can be shown and hidden easily, and is a great place for quick
+      actions.
+    linkText: 
+    url: 
+  - heading: 
+    text: The HandConstraint behavior provides a solver that constrains the tracked
+      object to a region safe for hand constrained content (such as hand UI, menus,
+      etc.) Safe regions are considered areas that don't intersect with the hand.
+      A derived class of HandConstraint called HandConstraintPalmUp is also included
+      to demonstrate a common behavior of activating the solver-tracked object when
+      the palm is facing the user.
+    linkText: MRTK3 Wiki
+    url: https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/212/solver?anchor=hand-menu-with-handconstraint-and-handconstraintpalmup
+  - heading: 
+    text: In MSPlayground a Hand Menu is used to provide an accessible UI that is
+      available from anywhere in the scene and is persistent across all scenes. In
+      particular, the Turbine Repair Menu is attached to the Hand Menu. Refer to
+      the Bootstrap Scene [Assets/MSPlayground/Core/Bootstrapper/BootstrapScene.unity]
+      and select the Debug > CanvasHandMenu object. In the Inspector the Solver Handler
+      for the menu tracks the Hand Joint and the Hand Constraint (Palm Up) Solver
+      is active.
+    linkText: 
+    url: 
+  - heading: 
+    text: "When compiling the project for a VR Device the Hand Constraint (Palm Up)
+      Solver is disabled and replaced with a Follow Solver to control menu positioning,
+      and the Solver Handler is changed from tracking the Hand Joint to the user\u2019s
+      Head. The menu is also modified to activate when the A Button is pressed."
+    linkText: See Cross-Device Support
+    url: Assets/Readme/Readme-CrossDeviceSupport.asset
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 1

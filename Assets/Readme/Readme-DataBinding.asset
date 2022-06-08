@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-DataBinding
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Data Binding
+  sections:
+  - text: "Data binding is the process that establishes a connection between an application's UX (view) and the data being presented (model). Suppose the binding has the correct settings and the data provides the proper notifications; when the data changes its value, the elements bound to the data reflect changes automatically."
+    linkText: MRTK3 Wiki
+    url: https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/176/Theming-and-databinding
+  - text: "The MRTK data binding framework helps create visual elements that can be populated and managed dynamically at runtime with programmatically generated data or data provided from an external data source."
+  - text: "Out of the box it can support a variety of data consumer binding targets (UX Targets or Actions that will use data to generate visual elements) that include\u003A"
+  - text: "•  TextMeshPro text"
+  - text: "•  Text stylesheets (for theming)"
+  - text: "•  Sprites (via sprite lookup)"
+  - text: "•  Sprite/Quad (via image fetch and replace)"
+  - text: "•  Lists (prefabs populated with variable data)"
+  - text: "•  Any other consumer that supports or implements the IDataConsumer interface (this could include a ScriptableObject)"
+  - text: "Data can be provided to your data consumers from the following types of data sources\u003A"
+  - text: "•  JSON text (directly or via URL fetch)"
+  - text: "•  Dictionary of variable data elements"
+  - text: "•  Object (Node based structure data)"
+  - text: "•  Reflection (Programmatically accessing any C# object)"
+  - text: "•  Programmatically generated or altered data"
+  - text: "•  Any other source that supports or implements the IDataSource interface"
+  - text: "Creating data consumers is a straightforward process and examples of data sources and data consumers that are used throughout the MSPlayground project can be found in the Assets/MSPlayground/Core/Data asset folder."
+  - text: "The MSPlayground project uses data binding for the following purposes\u003A"
+  - text: "•  Localized Text from the Unity Localization package"
+  - text: "•  Image Sprite - via sprite lookup (using Unity UI Canvas)"
+  - text: "•  Maskable Graphic Colors, Materials"
+  - text: "•  UIThemeProfile [Assets/MSPlayground/Core/UI/UIThemeProfile.cs] scriptable object"
+  - text: "•  RobotSFXTheme [Assets/MSPlayground/Turbines/Scripts/RobotSFXTheme.cs]"
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset  
+  loadedLayout: 0

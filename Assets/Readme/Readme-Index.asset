@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-Index
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 7ebe62c3e0f830647a22ce0389da487f, type: 3}
+  title: MSPlayground
+  sections:
+  - heading: 
+    text: 'MSPlayground is an XR application designed to demonstrate some key MRTK3
+      features in a simple game experience. It consists of two experiences: the Hub,
+      and Turbines. The Hub is a launcher from which other experiences, such as Turbines,
+      can be initiated. The Turbines experience is a simple game in which Zappy the
+      robot has lost his power supply, and the user is tasked with helping him recover
+      it.'
+    linkText: 
+    url: 
+  - heading: 
+    text: "Assets for the Hub and Turbines experiences, including scenes, lighting,
+      models, sounds, textures, and scripts, can be found within their respective
+      folders \u201CAssets/MSPlayground/Hub\u201D and \u201CAssets/MSPlayground/Turbines\u201D.
+      Additionally, common assets can be found in the \u201CAssets/MSPlayground/Common\u201D
+      folder, and core systems and tools such as the debug menu, event system, and
+      utilities can be found in the \u201CAssets/MSPlayground/Core\u201D folder.
+      Project specific MRTK settings can be found in the \u201CAssets/MSPlayground/MRTK\u201D
+      folder."
+    linkText: 
+    url: 
+  - heading: 
+    text: This project has been built with MRTK3 version internal.16 and utilizes
+      the OpenXR plug-in provider. It has been tested and verified to run on Microsoft
+      HoloLens 2 using the OpenXR plug-in with Microsoft HoloLens Feature Group,
+      and on Oculus Quest 2 using the Oculus plug-in provider. These settings can
+      be located in the Project Settings under XR Plug-in Management.
+    linkText: 
+    url: 
+  - heading: 
+    text: "This in-editor documentation on the specific MRTK features used in the
+      MSPlayground project can be found in the \u201CAssets/Readme\u201D folder.
+      It can also be opened from the Tutorial->Show Readme menu item."
+    linkText: 
+    url: 
+  - heading: Project Specific Notes
+    text: 
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: Scene Structure
+    url: Assets/Readme/Readme-SceneStructure.asset
+  - heading: 
+    text: 
+    linkText: UI System
+    url: Assets/Readme/Readme-UISystem.asset
+  - heading: 
+    text: 
+    linkText: Cross Device Support
+    url: Assets/Readme/Readme-CrossDeviceSupport.asset
+  - heading: MRTK3 Notes
+    text: 
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: Anchoring
+    url: Assets/Readme/Readme-Anchoring.asset
+  - heading: 
+    text: 
+    linkText: ARFoundation Plane Tracking
+    url: Assets/Readme/Readme-ARFPlanes.asset
+  - heading: 
+    text: 
+    linkText: UI Follow
+    url: Assets/Readme/UIFollow.asset
+  - heading: 
+    text: 
+    linkText: Hand Constraint Palm Up (Hand Menu)
+    url: Assets/Readme/Readme-PalmMenu.asset
+  - heading: 
+    text: 
+    linkText: Data Binding
+    url: Assets/Readme/Readme-DataBinding.asset
+  - heading: 
+    text: 
+    linkText: Theming
+    url: Assets/Readme/Readme-Theming.asset
+  - heading: 
+    text: 
+    linkText: Directional Indicators
+    url: Assets/Readme/Readme-DirectionalIndicators.asset
+  - heading: 
+    text: 
+    linkText: Surface Magnetism
+    url: Assets/Readme/Readme-SurfaceMagnetism.asset
+  - heading: 
+    text: 
+    linkText: Spatial Audio
+    url: Assets/Readme/Readme-SpatialAudio.asset
+  - heading: 
+    text: 
+    linkText: Bounds Control
+    url: Assets/Readme/Readme-BoundsControl.asset
+  - heading: 
+    text: 
+    linkText: Object Manipulation
+    url: Assets/Readme/Readme-ObjectManipulation.asset
+  loadedLayout: 1

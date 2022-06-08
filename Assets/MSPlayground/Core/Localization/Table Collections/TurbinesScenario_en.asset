@@ -1,0 +1,328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TurbinesScenario_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: c8fd1e52bcdf3c540b55a34b1eb358eb, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 141652291584
+    m_Localized: Feature Summary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365795897344
+    m_Localized: In this experience you will take on the task to power up Zappy
+      using the Wind Turbines placed around your environment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1654835539968
+    m_Localized: Environment Setup {num}/2
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 295924612100096
+    m_Localized: '{global.username}, you have to help me! My powerpack is nearly
+      depleted. Can you help me find a way to recharge?'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 325639670493184
+    m_Localized: Turbine 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325656418349056
+    m_Localized: Find and replace broken turbine parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 326864168185856
+    m_Localized: Data Binding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 326956157661184
+    m_Localized: 'Zappy used the name that you entered in the experience hub. This
+      is an example of Data Binding which allows you to construct a data-driven UI.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331965792415744
+    m_Localized: Find and Repair
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332059237314560
+    m_Localized: Zappy needs your help. Find the missing Wind Turbines and place
+      them on the highlighted Wind Farm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332248392036352
+    m_Localized: '{remaining_num} Remaining'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 332400209063936
+    m_Localized: '{num}/{total}'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 336281651539968
+    m_Localized: Great job, just {remaining_num} more wind {remaining_num:plural:Turbine|Turbines}
+      to go.
+    m_Metadata:
+      m_Items:
+      - id: 0
+      - id: 1
+  - m_Id: 336489013735424
+    m_Localized: Surface Magnetism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 336506755641344
+    m_Localized: Surface Magnetism lets you easily orient and place virtual objects
+      on real-world physical surfaces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 343066613542912
+    m_Localized: Great job {global.username}, looks like everything is setup. Now
+      let's open the Window to get some air flow.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 344810399625216
+    m_Localized: Looks like some Turbines need maintainance. Use your Hand Menu to
+      find the right parts and make repairs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051779255136256
+    m_Localized: Tower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051809718366208
+    m_Localized: Nacelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051878752415744
+    m_Localized: Rotor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2575016225042432
+    m_Localized: Orient the Turbines towards the Window to make sure they produce
+      enough power. {num_remaining} more to go!
+    m_Metadata:
+      m_Items:
+      - id: 2
+      - id: 0
+  - m_Id: 2576017678036992
+    m_Localized: It looks like we have enough power. Quick, {global.username}, click
+      the master switch.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 2580721992626176
+    m_Localized: Great job {global.username}! You successfully fixed my power source.
+      Lets take a look back on the features you touched on.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 3508337205473280
+    m_Localized: Nacelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508372022390784
+    m_Localized: Rotor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508382642368512
+    m_Localized: Tower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3509065500225536
+    m_Localized: Nacelle Issues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3509081782513664
+    m_Localized: Rotor Issues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3509171360264192
+    m_Localized: Tower Issues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961461436416
+    m_Localized: Feature Summary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933888
+    m_Localized: OFF
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933889
+    m_Localized: LOW
+    m_Metadata:
+      m_Items:
+      - id: 3
+  - m_Id: 8227961536933890
+    m_Localized: LOW
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933891
+    m_Localized: MID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933892
+    m_Localized: GOOD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933893
+    m_Localized: HIGH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8280273714311168
+    m_Localized: ON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8600763452518400
+    m_Localized: To manage the power supply, try adjusting the Turbine sliders.
+      Move the sliders until the dials turn green.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8618763593347072
+    m_Localized: UX Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8618763652067328
+    m_Localized: UX Controls provide the user with a familiar, instinctive way to
+      interact with and control objects in the scene.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497819889664
+    m_Localized: Environment Setup 1/2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497866027008
+    m_Localized: We need somewhere to put this virtual Window. Use air tap to pick
+      up the Window and place it in the highlighted area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497866027009
+    m_Localized: Environment Setup 2/2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497866027010
+    m_Localized: Next, let's place this virtual Wind Farm. Use air tap to pick it
+      up and place it in the highlighted area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497874415616
+    m_Localized: Surface Magnetism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497874415617
+    m_Localized: Surface Magnetism lets you orient and place virtual objects on
+      real-world physical surfaces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10077378065887232
+    m_Localized: Surface Magnetism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10077378124607488
+    m_Localized: Surface Magnetism lets you easily orient and place virtual objects
+      on real-world physical surfaces, and is a useful tool to arrange objects into
+      a fixed pattern.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10351157140660224
+    m_Localized: Azure Spatial Anchors (ASA)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10351157182603264
+    m_Localized: Azure Spatial Anchors (ASA) allow virtual objects and scene elements
+      to be connected to real-world locations and surfaces that the system can persist
+      over time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11108644456894464
+    m_Localized: Turbine Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11108644519809024
+    m_Localized: Your helper robot is suffering from a depleted power source. Find
+      a way to get him back online.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11108644519809025
+    m_Localized: Recommendations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11108644519809026
+    m_Localized: For an optimal experience, prepare a tabletop surface clear of objects.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11108644519809027
+    m_Localized: View Features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11108644519809028
+    m_Localized: Start Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484802727866368
+    m_Localized: Turbine Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484802790780928
+    m_Localized: Zappy the Robot is suffering from a depleted power source. Find
+      a way to get him back online.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484802790780929
+    m_Localized: Recommendations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484802790780930
+    m_Localized: For an optimal experience, prepare a tabletop surface clear of objects.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10746874418065408
+    m_Localized: View Features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10746874472591360
+    m_Localized: Start Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20576838785069056
+    m_Localized: Looks like some Turbines need maintainance.  Hold the A button to
+      find the right parts and make repairs.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 007062f4502e01000070a2dadf2609000070a229272b09000070e24b810100000070629b2d2e010000706251240d01000070a26b04380100007062acd8310100007062aff6250900
+    00000001:
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: plural formatting of "turbine(s)" is from Unity Localization
+          package
+    00000002:
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Old version = It looks like some turbines are not producing
+          enough power. Make sure they are oriented correctly towards the wind.
+    00000003:
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: The same as low

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9f1ab95673ce0454d891aa81bfead05f
+  m_SerializeEntries:
+  - m_GUID: ae201deb918a41849a1d22447a0adc19
+    m_Address: Assets/MSPlayground/Core/Localization/Table Collections/UI Shared
+      Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 478926d6e51850b4f840f8256893dc16
+    m_Address: Assets/Experimental/Localization/Table Collections/Tutorial Shared
+      Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: c8fd1e52bcdf3c540b55a34b1eb358eb
+    m_Address: Assets/MSPlayground/Core/Localization/Table Collections/TurbinesScenario
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: e2690f4db1ee4a34c86b296ec1231702
+    m_Address: Assets/MSPlayground/Core/Localization/Table Collections/HubScenario
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 4b6f854f55780ee4eb03c4304e628e1b
+    m_Address: Assets/MSPlayground/Core/Localization/Table Collections/MRTKFeatures
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 141862e348883aa4790053e68ac913eb
+    m_Address: Assets/MSPlayground/Core/Localization/Table Collections/ScenePortals
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: ebadcac4422b6094cb9545ef06e1cc1c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 55d5f658646737f4fa1865ba3ad67598, type: 2}
+    - {fileID: 11400000, guid: deac88e040227fa4aac82126f3499e2a, type: 2}

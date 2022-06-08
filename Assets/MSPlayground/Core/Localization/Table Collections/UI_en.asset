@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ae201deb918a41849a1d22447a0adc19, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 14680723456
+    m_Localized: battery level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 462984712192
+    m_Localized: LOW!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1047368699904
+    m_Localized: battery charging
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9401436606464
+    m_Localized: Welcome, {global.username}
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 398613969244160
+    m_Localized: '{global.username} - {DataBindingTester.Progress} - {floatVariable}
+      - {stringVariable}'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 9088518016102400
+    m_Localized: Recommendations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10073177130692608
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10133836719616000
+    m_Localized: Theming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134047839907840
+    m_Localized: Theming is a great way to customise your experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134142606012416
+    m_Localized: Sound Effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134155616743424
+    m_Localized: UI Colour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134206837583872
+    m_Localized: Custom Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134294557257728
+    m_Localized: MRTK Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134332524097536
+    m_Localized: Jump to a specific part of the experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134401893691392
+    m_Localized: Jump to Feature
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134449947832320
+    m_Localized: Change the name Mr Bot used across the experience.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750561050726400
+    m_Localized: Are you sure?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750704206516224
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750730731294720
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12693668483985408
+    m_Localized: Data Binding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12693702185218048
+    m_Localized: Change name from {global.username} associated with data binding.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 12706724245041152
+    m_Localized: Edit Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033145656045568
+    m_Localized: Restart Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033152685699072
+    m_Localized: Reset Spatial Anchors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033154686382080
+    m_Localized: Rescan Space
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330683197648896
+    m_Localized: Are you sure you want to restart the experience?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330687232569344
+    m_Localized: Are you sure you want to reset Spatial Anchors?<br>This will reset
+      your experience.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330687840743424
+    m_Localized: Are you sure you want to rescan your space?<br>This will reset your
+      experience.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973726105600
+    m_Localized: Accept
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973772242944
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973772242945
+    m_Localized: '{global.username}'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 20240043327754240
+    m_Localized: Return to Hub
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697280
+    m_Localized: Feature Summary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697281
+    m_Localized: Scroll to view all features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697282
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697283
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646725353472
+    m_Localized: View Features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646750519296
+    m_Localized: Start Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646750519297
+    m_Localized: Experience Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646750519298
+    m_Localized: Blue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646750519299
+    m_Localized: Red
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646750519300
+    m_Localized: Green
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646750519301
+    m_Localized: Robot Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646750519302
+    m_Localized: Voice 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20661646750519303
+    m_Localized: Voice 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139453227008
+    m_Localized: View Features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139503558656
+    m_Localized: Start Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139503558657
+    m_Localized: Experience Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752960
+    m_Localized: Blue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752961
+    m_Localized: Red
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752962
+    m_Localized: Green
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752963
+    m_Localized: Robot Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752964
+    m_Localized: Voice 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752965
+    m_Localized: Voice 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302080208896
+    m_Localized: Got it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302134734848
+    m_Localized: Are you sure you want to leave this experience?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302134734849
+    m_Localized: Are you sure you want to quit the app?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302134734850
+    m_Localized: Developer Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302134734851
+    m_Localized: Quit App
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00104af18c08000000100a8c896a010000100a64662c3b000170a251c9843d000070a2d9da182d00

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-ARFPlanes
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: AR Foundation Planes
+  sections:
+  - heading: AR Foundation Plane Detection
+    text: "The plane manager creates GameObjects for each detected plane in the environment. A plane is a flat surface represented by a pose, dimensions, and boundary points. The boundary points are convex."
+  - text: "Examples of features in the environment that can be detected as planes are horizontal tables, floors, countertops, and vertical walls."
+  - text: "You can specify a detection mode, which can be horizontal, vertical, or both. Some platforms require extra work to perform vertical plane detection, so if you only need horizontal planes, you should disable vertical plane detection"
+    linkText: Reference
+    url: https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.0/manual/plane-manager.html
+  - text: "MSPlayground uses ARFoundation plane detection and ray casting to detect the user’s room and create a mesh. This method of plane detection is an alternative to Scene Understanding that is available for iOS and Android while Scene Understanding is only available on Microsoft HoloLens. The algorithm used is fairly simple and naïve which works reasonably well for small, regularly shaped rooms but will not work well for complex rooms, and requires additional work to merge planes into a single environment mesh."
+  - text: "You can find the algorithm implementation in ARF Room Scanner [Assets/MSPlayground/Core/Spatial/ARFRoomScanner.cs] and the associated Virtual Room [Assets/MSPlayground/Core/Spatial/VirtualRoom.cs]."
+  - text: "This algorithm casts a series of rays around the user in a radial pattern – like the spokes on a wheel – and identifies the distance to where the ray collides with a wall or feature and builds up a set of planes that have been detected. Any rays that fail to identify a collision with a wall or feature are tracked as \u201Choles\u201D, and the user is directed to gaze in the direction of the hole in a secondary attempt to identify a collision or determine if a gap or space is present."
+  - text: "Once the algorithm makes a full sweep of the environment, each of the collision points and set of planes are analyzed and merged to create VirtualWalls [Assets/MSPlayground/Core/Spatial/VirtualWall.cs] that form a closed, watertight VirtualRoom [Assets/MSPlayground/Core/Spatial/VirtualRoom.cs]"
+  - heading: Scene Understanding (within ARF)
+    text: "Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, like the highly accurate but less structured spatial mapping and new AI driven runtimes. By combining these technologies, Scene understanding generates representations of 3D environments that are similar to those you may have used in frameworks such as Unity or ARKit/ARCore."
+    linkText: Reference
+    url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/scene-understanding
+  - text: "Scene understanding transforms the unstructured environment sensor data that your Mixed Reality device captures and converts it into a powerful abstract representation. The SDK acts as the communication layer between your application and the Scene Understanding runtime. It's aimed to mimic existing standard constructs, such as 3D scene graphs for 3D representations, and 2D rectangles and panels for 2D applications."
+    linkText: Reference
+    url: https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/scene-understanding-sdk
+  - text: "Scene Understanding is another method of obtaining a watertight mesh for the user’s environment. Scene Understanding is only available for Microsoft HoloLens devices, while ARFoundation plane tracking can be used on AR platforms where SceneUnderstanding is not available. Scene Understanding is able to generate a closed, watertight mesh automatically and is also able to detect and resolve smaller, non-planar objects (ie. spherical objects)."
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset  
+  loadedLayout: 0

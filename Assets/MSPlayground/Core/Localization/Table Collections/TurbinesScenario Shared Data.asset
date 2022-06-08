@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: TurbinesScenario Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: TurbinesScenario
+  m_TableCollectionNameGuidString: c8fd1e52bcdf3c540b55a34b1eb358eb
+  m_Entries:
+  - m_Id: 10484802727866368
+    m_Key: turbine_experience_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484802790780928
+    m_Key: turbine_experience_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484802790780929
+    m_Key: turbine_experiernce_recommendations_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484802790780930
+    m_Key: turbine_experiernce_recommendations_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961461436416
+    m_Key: feature_summary_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365795897344
+    m_Key: feature_summary_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497819889664
+    m_Key: environment_setup_title_part_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497866027008
+    m_Key: environment_setup_desc_part_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497866027009
+    m_Key: environment_setup_title_part_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497866027010
+    m_Key: environment_setup_desc_part_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295924612100096
+    m_Key: robot_dialog_help_me
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325639670493184
+    m_Key: tutorial_dialog_find_repair_turbine_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325656418349056
+    m_Key: tutorial_dialog_find_repair_turbine_body
+    m_Metadata:
+      m_Items: []
+  - m_Id: 326864168185856
+    m_Key: data_binding_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 326956157661184
+    m_Key: data_binding_body
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331965792415744
+    m_Key: tutorial_dialog_find_and_repair_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332059237314560
+    m_Key: tutorial_dialog_find_and_repair_body
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332248392036352
+    m_Key: tutorial_dialog_find_and_repair_body_remaining
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332400209063936
+    m_Key: tutorial_dialog_find_and_repair_body_counter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 336281651539968
+    m_Key: robot_dialog_good_job_four_turbines_remaining
+    m_Metadata:
+      m_Items: []
+  - m_Id: 336489013735424
+    m_Key: tutorial_dialog_surface_magnatism_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 336506755641344
+    m_Key: tutorial_dialog_surface_magnatism_body
+    m_Metadata:
+      m_Items: []
+  - m_Id: 343066613542912
+    m_Key: robot_dialog_lets_open_the_window
+    m_Metadata:
+      m_Items: []
+  - m_Id: 344810399625216
+    m_Key: robot_dialog_theres_an_issue_with_gearbox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20576838785069056
+    m_Key: robot_dialog_theres_an_issue_with_gearbox_vr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051779255136256
+    m_Key: tower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051809718366208
+    m_Key: nacelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051878752415744
+    m_Key: rotor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8600763452518400
+    m_Key: robot_dialog_adjust_sliders_to_manage_power_supply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2575016225042432
+    m_Key: robot_dialog_turbines_not_producing_enough_power
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2576017678036992
+    m_Key: robot_dialog_turbines_are_producing_enough_power
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2580721992626176
+    m_Key: robot_dialog_experience_summary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051809718366208
+    m_Key: nacelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051878752415744
+    m_Key: rotor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051779255136256
+    m_Key: tower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3509065500225536
+    m_Key: nacelle_issues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3509081782513664
+    m_Key: rotor_issues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3509171360264192
+    m_Key: tower_issues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933888
+    m_Key: off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933889
+    m_Key: no_power_throughput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933890
+    m_Key: low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933891
+    m_Key: mid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933892
+    m_Key: good
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8227961536933893
+    m_Key: high
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8280273714311168
+    m_Key: on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10746874418065408
+    m_Key: view_features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10746874472591360
+    m_Key: start_experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8618763593347072
+    m_Key: tooltip_ux_controls_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8618763652067328
+    m_Key: tooltip_ux_controls_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10077378065887232
+    m_Key: tooltip_surface_magnetism_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10077378124607488
+    m_Key: tooltip_surface_magnetism_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10351157140660224
+    m_Key: tooltip_azure_spatial_anchors_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10351157182603264
+    m_Key: tooltip_azure_spatial_anchors_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10448851704115200
+    m_Key: tooltip_spatial_audio_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10448851788001280
+    m_Key: tooltip_spatial_audio_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497874415616
+    m_Key: tooltip_ux_surface_magnetism_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10076497874415617
+    m_Key: tooltip_ux_surface_magnetism_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1654835539968
+    m_Key: environment_setup_part_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141652291584
+    m_Key: 'feature_summary_title
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508337205473280
+    m_Key: 'nacelle
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508372022390784
+    m_Key: 'rotor
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508382642368512
+    m_Key: 'tower
+
+'
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1648517305213

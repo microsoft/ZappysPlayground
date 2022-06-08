@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: HubScenario_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: e2690f4db1ee4a34c86b296ec1231702, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 1806174074859520
+    m_Localized: "Pas d'ancres sauv\xE9es pour localiser"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360277876736
+    m_Localized: Alors, comment devrions-nous vous appeler?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360370151424
+    m_Localized: Content de te revoir. Devrions-nous encore vous appeler {global.username}?
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5167360370151425
+    m_Localized: Entrez le nom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360370151426
+    m_Localized: Sauter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360370151427
+    m_Localized: Suivant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5167360370151428
+    m_Localized: Continuez
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7120553959911424
+    m_Localized: progression de l'analyse = {progress}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7128673318760448
+    m_Localized: Accepter le scan de la chambre ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7128673322954752
+    m_Localized: Accepter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7128673322954753
+    m_Localized: Rescanner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7203479452020736
+    m_Localized: progression de l'analyse = {progress}
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7203479506546688
+    m_Localized: Accepter le scan de la chambre ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7203479506546689
+    m_Localized: Accepter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7203479506546690
+    m_Localized: Rescannez l'espace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9393201960087552
+    m_Localized: Bienvenue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9393202006224896
+    m_Localized: Recherche d'ancres spatiales ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9393202006224897
+    m_Localized: Sauver les ancres. Regardez autour de votre espace.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9396408480329728
+    m_Localized: "Il semble que votre environnement ait chang\xE9. R\xE9socions votre
+      espace."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9399155812364288
+    m_Localized: "Ensuite, comprenons votre espace. Pour une exp\xE9rience optimale,
+      pr\xE9parez une surface de table exempte d'objets.<br><br>Regardez les gemmes
+      pour les faire grandir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9422694212857856
+    m_Localized: "Il semble que votre environnement ait chang\xE9. R\xE9socions votre
+      espace."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10127645514272768
+    m_Localized: "Bienvenue \xE0 Playground. Ici, vous d\xE9couvrirez les fonctionnalit\xE9s
+      du kit d'outils de r\xE9alit\xE9 mixte et aurez acc\xE8s \xE0 des exemples
+      de code que vous pourrez utiliser dans vos propres projets.<br><br>\nLorsque
+      vous voyez une vignette de fonctionnalit\xE9 MRTK verte, regardez-la pour plus
+      d'informations. Essayez-le maintenant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10127645526855680
+    m_Localized: "V\xE9rification des ancres spatiales. Jetez un \u0153il \xE0 votre
+      environnement."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10127645531049984
+    m_Localized: Analyse d'environnement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10127645531049985
+    m_Localized: Cet espace semble familier! Voulez-vous continuer ou annuler votre
+      espace?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10507161080303616
+    m_Localized: Scan de chambre complet
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00104ad7af5b12000070e2c186971900

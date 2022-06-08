@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-DirectionalIndicators
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Directional Indicators (Solver)
+  sections:
+  - heading: 
+    text: The DirectionalIndicator class is a tag-along component that orients itself
+      to the direction of a desired point in space.
+    linkText: 
+    url: 
+  - heading: 
+    text: Most commonly used when the Tracked Target Type of the SolverHandler is
+      set to Head. In this fashion, a UX component with the DirectionalIndicator
+      solver will direct a user to look at the desired point in space.
+    linkText: 
+    url: 
+  - heading: 
+    text: The desired point in space is determined via the Directional Target property.
+    linkText: 
+    url: 
+  - heading: 
+    text: If the directional target is viewable by the user or whatever frame of
+      reference is set in the SolverHandler, then this solver will disable all Renderer 
+      components underneath it. If not viewable, then everything will be enabled
+      on the indicator.
+    linkText: 
+    url: 
+  - heading: 
+    text: The size of the indicator will shrink the closer the user is to capturing
+      the Directional Target in their FOV.
+    linkText: MRTK3 Wiki
+    url: https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/212/solver?anchor=directionalindicator
+  - heading: 
+    text: "In MSPlayground we use the Directional Indicator Solver to direct the
+      user to their next goal. Refer to the Directional Indicator prefab [Assets/MSPlayground/Turbines/Prefabs/DirectionalIndicator.prefab]
+      for an example of a Directional Indicator component. The Directional Indicator\u2019s
+      target is set by the Turbine Scenario Resources script file [Assets/MSPlayground/Turbines/Scripts/TurbineScenarioResources.cs]
+      via the FocusOnObject() method."
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 0

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-SceneStructure
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Scene Structure and Loading Flow
+  sections:
+  - heading: 
+    text: There are several different approaches to managing MRTK objects across
+      multiple scenes and scene loads which can include loading scenes additively
+      and unloading as needed, loading MRTK objects dynamically into each scene during
+      the scene load, and the approach demonstrated here in MSPlayground using a
+      Bootstrap scene to manage common objects.
+    linkText: 
+    url: 
+  - heading: 
+    text: "In this project you can find the BootstrapScene in [Assets/MSPlayground/Core/Bootstrapper/BootstrapScene.unity]
+      which has been used to store the MRTK objects and any other global objects
+      used in this project. Each of these objects has been flagged with the \u201CDontDestroyOnLoad\u201D
+      property. The Bootstrap Scene then automatically loads directly into our Hub
+      Scene [Assets/MSPlayground/Hub/Scenes/Hub.unity]. Normally when dynamically
+      loading a scene, the current scene objects are all destroyed. By setting the
+      objects in the Bootstrap Scene as \u201CDontDestroyOnLoad\u201D, loading the
+      subsequent Hub scene will allow those objects to persist and continue to exist
+      across future scene loads."
+    linkText: 
+    url: 
+  - heading: 
+    text: "This approach does however have a limitation when working in the Unity
+      Editor. Because the MRTK objects are being loaded by the Bootstrap Scene, opening
+      another scene in the Editor will not have those objects available because the
+      scene hasn\u2019t been dynamically loaded. To resolve this limitation we have
+      created an Editor Bootstrap Helper component [Assets/MSPlayground/Core/Bootstrapper/EditorBootstrapHelper.cs]
+      that can be added to any non-Bootstrap Scene to automatically load those objects.
+      This component has a UNITY_EDITOR preprocessor block in the Awake() method
+      that will load the Bootstrap Scene to make these objects available in the editor."
+    linkText: 
+    url: 
+  - heading: 
+    text: When compiling the project for a VR Device we will additionally load the
+      VR environment scenes Hub VR Environment Scene [Assets/MSPlayground/Hub/Scenes/HubVREnvironment.unity]
+      and Turbines Environment Scene [Assets/MSPlayground/Turbines/Scenes/TurbinesVREnvironment.unity]
+      additively when their respective Hub Scene [Assets/MSPlayground/Hub/Scenes/Hub.unity]
+      and Turbines Scene [Assets/MSPlayground/Turbines/Scenes/Turbines.unity] are
+      loaded.
+    linkText: See Cross-Device Support
+    url: Assets/Readme/Readme-CrossDeviceSupport.asset
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 1

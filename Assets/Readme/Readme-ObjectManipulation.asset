@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-ObjectManipulation
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Object Manipulation
+  sections:
+  - heading: 
+    text: Object Manipulator enables intuitive manipulation of objects in 3D space
+      with any input device or modality. In MRTK v2, most of the complex logic and
+      math for the different types of input were handled by ObjectManipulator itself.
+      A separate codepath had to be maintained for each type of interaction, resulting
+      in less flexibility when introducing new types of interactions. In MRTK3, the
+      interactor is responsible for the specifics of how a particular type of input
+      is translated into a manipulation. ObjectManipulator simply listens to these
+      interactors and applies the relevant transformation to the object. As a result,
+      ObjectManipulator in MRTK3 is significantly simpler and smaller in scope.
+    linkText: MRTK3 Wiki
+    url: https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/208/Object-manipulator
+  - heading: 
+    text: In MSPlaygroud we use Object Manipulation to allow you to pick up and place
+      the Wind Turbines. Refer to the Turbine prefab [Assets/Experimental/TurbineTest/Prefabs/Turbine.prefab]
+      and locate the Object Manipulator (Script) in the Inspector. This example limits
+      the allowed manipulations to Move-only.
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 0

@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d2c67baa4b38b1b40872cd473e36e681, type: 3}
+    - {fileID: 102900000, guid: 8f2157ae26ae86d44bef2b867a5bcd4a, type: 3}
+    - {fileID: 102900000, guid: d709ba941604a8045a762816130d3a69, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b565a4507337c9746bb742932c5ec505, type: 3}
+  - {fileID: 21300000, guid: f00e8121b1463da419a344fd2a6a941f, type: 3}
+  - {fileID: 21300000, guid: 16d55261d2c7dc541809251ce1fd98fd, type: 3}
+  - {fileID: 21300000, guid: 9d163771437ad7740ba122efbe728056, type: 3}
+  - {fileID: 21300000, guid: 29661e71c4acab149baef32a27a61afe, type: 3}
+  - {fileID: 21300000, guid: c29ac212678e6fb4a83b658c1c21800d, type: 3}
+  - {fileID: 21300000, guid: b0143a32de8853a4abed37600ce4b062, type: 3}
+  - {fileID: 21300000, guid: 8b836c434ca4a8d49a4d846ff957b879, type: 3}
+  - {fileID: 21300000, guid: 36b9cb531b9a60641bed249946e7310e, type: 3}
+  - {fileID: 21300000, guid: 9cf029739d11fd84eb6ab5a778caed4f, type: 3}
+  - {fileID: 21300000, guid: b3ed9334dfa57c6479f844ee7db07c76, type: 3}
+  - {fileID: 21300000, guid: 2a2c65f48ddb9d24f8a0e9825fa50198, type: 3}
+  - {fileID: 21300000, guid: 069a09b51b68c2d45b662a34a7833f0e, type: 3}
+  - {fileID: 21300000, guid: 422e0ad5e1c31b548b4b9fd409e955f0, type: 3}
+  - {fileID: 21300000, guid: cb185f36cccca8545be85f06916a6e19, type: 3}
+  - {fileID: 21300000, guid: c53594663cf0bf64c9ee0df108a0988e, type: 3}
+  - {fileID: 21300000, guid: 7ac47d66d1452174cada3f20f7957da7, type: 3}
+  - {fileID: 21300000, guid: e0b8ddb6b9e746348b58631c0dbf62c4, type: 3}
+  - {fileID: 21300000, guid: 1b062f177e233aa499b901b5e1107684, type: 3}
+  - {fileID: 21300000, guid: 005e9e47f4d49b641bc877202fbe80e1, type: 3}
+  - {fileID: 21300000, guid: c1a601670f77ed44bb6d9d46d3592bf1, type: 3}
+  - {fileID: 21300000, guid: d95881879798858409b63552ff5cbd50, type: 3}
+  - {fileID: 21300000, guid: e82633a70c2fded409c19579327b3a3f, type: 3}
+  - {fileID: 21300000, guid: a076fdb7f53c78e49a97bce39e68393c, type: 3}
+  - {fileID: 21300000, guid: cb97ef88a6004334098f243d672d82b5, type: 3}
+  - {fileID: 21300000, guid: 7ae3b1d8ad08e5b4cb5e2fc9dff6bfe0, type: 3}
+  - {fileID: 21300000, guid: de4af3f8717627b4ab243bdf113e090b, type: 3}
+  - {fileID: 21300000, guid: 79cccef822b639f48905e8d53894076b, type: 3}
+  - {fileID: 21300000, guid: 7bb52189c29dbac47a31ca77d7dd3948, type: 3}
+  - {fileID: 21300000, guid: ea922ff97d1fdaf4e9ccdbd3f1d1f2bd, type: 3}
+  - {fileID: 21300000, guid: 18056bfa73214a44ab80bc27153109ab, type: 3}
+  - {fileID: 21300000, guid: 4abcde0b6723dc44bac98ee753fc760f, type: 3}
+  - {fileID: 21300000, guid: 0f0f982b78fb23d439c99817eb8c97e3, type: 3}
+  - {fileID: 21300000, guid: 8cba7c4b06c13af44a2b72e58d27866d, type: 3}
+  - {fileID: 21300000, guid: e66c78eb517f47140b5d4d362eaeee4c, type: 3}
+  - {fileID: 21300000, guid: c592790ce8fd8d14bba5e7241e0dadee, type: 3}
+  - {fileID: 21300000, guid: 2dec9bdc327009f4eb6b1be8c2ab73b4, type: 3}
+  - {fileID: 21300000, guid: 40b1c72e68cbc49449d434124f26fff5, type: 3}
+  - {fileID: 21300000, guid: 9d4a3f2e2641fae4798e391fbe0e9381, type: 3}
+  - {fileID: 21300000, guid: d9bdff3ea465725469fccb08842cd074, type: 3}
+  - {fileID: 21300000, guid: 73862a6ef55df2e4cb7c8d860fed6350, type: 3}
+  - {fileID: 21300000, guid: 4b588b6e7f2d6ae4dbe54839cf1a498f, type: 3}
+  - {fileID: 21300000, guid: 6528fffeda024db4fa054544bcbb44e0, type: 3}
+  - {fileID: 21300000, guid: 846427efcf547944fb3de51edf27e179, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - icon_surface_magnetism
+  - icon_bounds_controls
+  - icon_settings
+  - icon_close
+  - directional_indicator
+  - line_gradient
+  - theme_blue
+  - white_circle
+  - icon_follow
+  - icon_spatial_audio
+  - icon_info
+  - icon_spatial_anchors
+  - white_stroke_gradient_small
+  - icon_hand_constraint
+  - icon_MRTK_features
+  - icon_error
+  - icon_power
+  - icon_gaze
+  - theme_toggle
+  - icon_electricity
+  - icon_ux_controls
+  - hub_env_scan_green
+  - white_stroke_gradient_wide
+  - icon_debug
+  - icon_directional_arrow
+  - icon_circle
+  - icon_exit
+  - icon_backward
+  - white_solid_rounded_square_outline
+  - icon_theming
+  - hub_env_scan
+  - icon_reset
+  - white_solid_rounded_square
+  - icon_toolkit
+  - icon_turbine
+  - icon_near_and_far
+  - icon_searching
+  - white_solid_rounded_square_b
+  - icon_dotted_circle
+  - icon_forward
+  - icon_data_binding
+  - icon_scene_understanding
+  - theme_red
+  - theme_green
+  m_RenderDataMap: {}
+  m_Tag: UIAtlas
+  m_IsVariant: 0

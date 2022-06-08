@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ScenePortals_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 141862e348883aa4790053e68ac913eb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 49975791616
+    m_Localized: Touche ou AirTap pour entrer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50013540352
+    m_Localized: "Caract\xE9ristiques \xE0 l'int\xE9rieur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50017734656
+    m_Localized: "Exp\xE9rience de la turbine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50026123264
+    m_Localized: "\u2022 Magn\xE9tisme de surface\n\u2022 Liaison des donn\xE9es\n\u2022
+      Contr\xF4les UX\n\u2022 Contr\xF4les des limites\n\u2022 Contrainte de la main
+      Palmier vers le haut\n\u2022 fl\xE8che directionnelle\n\u2022 Regarder\n\u2022
+      Compr\xE9hension de la sc\xE8ne\n\u2022 Audio spatial\n\u2022 Ancres spatiales\n\u2022
+      Suivre\n\u2022 Interactions proches et lointaines"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6145304802496512
+    m_Localized: "\u2022 Magn\xE9tisme de surface\n\u2022 Liaison des donn\xE9es\n\u2022
+      Contr\xF4les UX\n\u2022 Contr\xF4les des limites\n\u2022 fl\xE8che directionnelle\n\u2022
+      Regarder\n\u2022 Audio spatial\n\u2022 Suivre\n\u2022 Interactions proches
+      et lointaines"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

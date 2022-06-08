@@ -1,0 +1,262 @@
+[
+  {
+    "id": "dialog_yes_no",
+    "yes": "UI/yes",
+    "no": "UI/no",
+    "text": "UI/are_you_sure",
+    "prefab": "panel_c_simple_dialog"
+  },
+  {
+    "id": "test_platform_override",
+    "yes": "UI/yes",
+    "no": "UI/no",
+    "text": "tutorial/test_override_default",
+    "prefab": "dialog_prompt",
+    "override":
+    {
+      "vr" :
+      {
+        "text": "tutorial/test_override_vr"
+      }
+    }
+  },
+  {
+    "id": "panel_test_complex_local_variables",
+    "feature_title": "UI/test",
+    "feature_desc": "UI/no",
+    "feature_icon": "theming",
+    "prefab": "panel_c_feature_base"
+  },
+  {
+    "id": "robot_needs_help_dialog",
+    "prefab": "TurbinesScenario/robot_dialog_continue_with_tooltip",
+    "text": "TurbinesScenario/robot_dialog_help_me",
+    "tooltip_title": "Tooltips/tooltip_spatial_audio_title",
+    "tooltip_desc": "Tooltips/tooltip_spatial_audio_desc",
+    "tooltip_icon": "spatial_audio"
+  },
+  {
+    "id": "tutorial_dialog_data_binding",
+    "prefab": "TurbinesScenario/tutorial_dialog_data_binding"
+  },
+  {
+    "id": "tutorial_dialog_find_and_repair",
+    "prefab": "TurbinesScenario/tutorial_dialog_find_and_repair",
+    "title_text": "TurbinesScenario/tutorial_dialog_find_and_repair_title",
+    "content_text": "TurbinesScenario/tutorial_dialog_find_and_repair_body",
+    "content1": "TurbinesScenario/tutorial_dialog_find_and_repair_body_counter",
+    "content2": "TurbinesScenario/tutorial_dialog_find_and_repair_body_remaining",
+    "tooltip_title": "Tooltips/tooltip_azure_spatial_anchors_title",
+    "tooltip_desc": "Tooltips/tooltip_azure_spatial_anchors_desc",
+    "tooltip_icon": "spatial_anchors"
+  },
+  {
+    "id": "robot_dialog_good_job_four_turbines_remaining",
+    "prefab": "TurbinesScenario/robot_dialog",
+    "text": "TurbinesScenario/robot_dialog_good_job_four_turbines_remaining"
+  },
+  {
+    "id": "tutorial_dialog_surface_magnatism",
+    "prefab": "TurbinesScenario/tutorial_dialog_surface_magnatism"
+  },
+  {
+    "id": "robot_dialog_lets_open_the_window",
+    "prefab": "TurbinesScenario/robot_dialog",
+    "text": "TurbinesScenario/robot_dialog_lets_open_the_window"
+  },
+  {
+    "id": "robot_dialog_select_turbines",
+    "prefab": "TurbinesScenario/robot_dialog",
+    "text": "TurbinesScenario/robot_dialog_select_turbines"
+  },
+  {
+    "id": "robot_dialog_theres_an_issue_with_gearbox",
+    "prefab": "TurbinesScenario/robot_dialog_pointer",
+    "text": "TurbinesScenario/robot_dialog_theres_an_issue_with_gearbox",
+	"override":
+	{
+		"vr" :
+		{
+			"text": "TurbinesScenario/robot_dialog_theres_an_issue_with_gearbox_vr",
+		}
+	}	
+  },
+  {
+    "id": "tutorial_dialog_repair_broken_parts",
+    "prefab": "TurbinesScenario/tutorial_dialog_repair_broken_parts"
+  },
+  {
+	"id": "temp_save_anchors",
+	"prefab": "HubScenario/temp_hub_dialog",
+	"text": "HubScenario/temp_save_anchors"
+  },
+  {
+    "id": "hub_enter_name",
+    "prefab": "HubScenario/panel_c_name_entry"
+  },
+  {
+    "id": "settings_change_name",
+    "prefab": "HubScenario/panel_c_name_entry2",
+    "text": ""
+  },
+  {
+	"id": "temp_ready",
+	"prefab": "HubScenario/temp_hub_dialog"
+  },
+  {
+    "id": "tutorial_dialog_volumetric_layout",
+    "prefab": "TurbinesScenario/tutorial_dialog_volumetric_layout"
+  },
+  {
+    "id": "robot_dialog_adjust_sliders_to_manage_power_supply",
+    "prefab": "TurbinesScenario/robot_dialog_adjust_sliders_to_manage_power_supply",
+    "text": "TurbinesScenario/robot_dialog_adjust_sliders_to_manage_power_supply",
+    "tooltip_title": "Tooltips/tooltip_ux_controls_title",
+    "tooltip_desc": "Tooltips/tooltip_ux_controls_desc",
+    "tooltip_icon": "ux_controls"
+  },
+  {
+    "id": "robot_dialog_turbines_not_producing_enough_power",
+    "prefab": "TurbinesScenario/robot_dialog_pointer",
+    "text": "TurbinesScenario/robot_dialog_turbines_not_producing_enough_power"
+  },
+  {
+    "id": "robot_dialog_turbines_are_producing_enough_power",
+    "prefab": "TurbinesScenario/robot_dialog",
+    "text": "TurbinesScenario/robot_dialog_turbines_are_producing_enough_power"
+  },
+  {
+    "id": "robot_dialog_experience_summary",
+    "prefab": "TurbinesScenario/robot_dialog_continue",
+    "text": "TurbinesScenario/robot_dialog_experience_summary"
+  },
+  {
+    "id": "dialog_restart_experience_confirmation",
+    "yes": "UI/yes",
+    "no": "UI/no",
+    "text": "UI/are_you_sure_you_want_to_restart_the_experience",
+    "prefab": "dialog_prompt"
+  },
+  {
+    "id": "dialog_reset_spatial_anchors_confirmation",
+    "yes": "UI/yes",
+    "no": "UI/no",
+    "text": "UI/are_you_sure_you_want_to_reset_spatial_anchors",
+    "prefab": "dialog_prompt"
+  },
+  {
+    "id": "dialog_rescan_your_space",
+    "yes": "UI/yes",
+    "no": "UI/no",
+    "text": "UI/are_you_sure_you_want_to_rescan_your_space",
+    "prefab": "dialog_prompt"
+  },
+  {
+    "id": "dialog_scanning_progress",
+    "yes": "UI/accept",
+    "no": "UI/cancel",
+    "text": "HubScenario/scanning_progress",
+    "prefab": "HubScenario/dialog_scanning_progress"
+  },
+  {
+    "id": "hub_validate_scan",
+    "yes": "HubScenario/accept_scan",
+    "no": "HubScenario/reject_scan",
+    "text": "HubScenario/validate_scan",
+    "title": "HubScenario/room_scan_complete",
+    "tooltip_title": "Tooltips/title_scene_understanding",
+    "tooltip_desc": "Tooltips/desc_scene_understanding",
+    "tooltip_icon": "scene_understanding",
+    "prefab": "HubScenario/panel_env_scan_validate"
+  },
+  {
+    "id": "hub_welcome_new",
+    "prefab": "HubScenario/panel_welcome_new",
+    "title": "HubScenario/welcome",
+    "text": "HubScenario/welcome_desc",
+    "tooltip_title": "Tooltips/title_gaze",
+    "tooltip_desc": "Tooltips/desc_gaze",
+    "tooltip_icon": "gaze"
+  },
+   {
+	"id": "hub_searching_for_anchors",
+     "prefab": "HubScenario/panel_env_scan_searching",
+     "searching": "HubScenario/searching_for_anchors",
+     "title": "HubScenario/environment_scan",
+     "text": "HubScenario/searching_for_anchors_desc"
+  },
+  {
+    "id": "hub_anchors_found",
+    "prefab": "HubScenario/panel_env_scan_anchors_found",
+    "title": "HubScenario/environment_scan",
+    "text": "HubScenario/anchor_found",
+    "yes": "UI/continue",
+    "no": "HubScenario/reject_scan"
+  },
+   {
+	"id": "hub_saving_anchors",
+	"prefab": "HubScenario/panel_env_saving_anchors",
+	"text": "HubScenario/saving_anchors",
+	"title": "HubScenario/room_scan_complete"
+  },
+   {
+	"id": "hub_failed_to_find_anchor",
+	"prefab": "HubScenario/temp_hub_dialog",
+	"text": "HubScenario/failed_to_find_anchor"
+  },
+   {
+	"id": "hub_lets_scan_your_space",
+	"prefab": "HubScenario/panel_env_scan",
+	"title": "HubScenario/environment_scan",
+	"text": "HubScenario/lets_scan_your_space",
+	"cta": "UI/start"
+  },
+   {
+	"id": "hub_lets_rescan_your_space",
+     "prefab": "HubScenario/panel_env_scan",
+     "title": "HubScenario/environment_scan",
+     "text": "HubScenario/lets_rescan_your_space",
+     "cta": "UI/start"
+  },
+  {
+    "id": "tutorial_dialog_environment_setup_1",
+    "prefab": "TurbinesScenario/tutorial_dialog_environment_setup_1",
+    "title_text": "TurbinesScenario/environment_setup_title_part_1",
+    "content_text": "TurbinesScenario/environment_setup_desc_part_1"
+  },
+  {
+    "id": "tutorial_dialog_environment_setup_2",
+    "prefab": "TurbinesScenario/tutorial_dialog_environment_setup_2",
+    "title_text": "TurbinesScenario/environment_setup_title_part_2",
+    "content_text": "TurbinesScenario/environment_setup_desc_part_2",
+    "tooltip_title": "Tooltips/tooltip_surface_magnetism_title",
+    "tooltip_desc": "Tooltips/tooltip_surface_magnetism_desc",
+    "tooltip_icon": "surface_magnetism"
+  },
+  {
+    "id": "feature_summary_end",
+    "prefab": "feature_summary_end"
+  },
+  {
+    "id": "feature_summary_intro",
+    "prefab": "feature_summary_intro"
+  },
+  {
+    "id": "tutorial_dialog_turbine_experience_intro",
+    "prefab": "TurbinesScenario/tutorial_dialog_turbine_experience_intro"
+  },
+  {
+    "id": "are_you_sure_you_want_to_leave",
+    "yes": "UI/yes",
+    "no": "UI/no",
+    "text": "UI/are_you_sure_you_want_to_leave",
+    "prefab": "dialog_prompt"
+  },
+  {
+    "id": "are_you_sure_you_want_to_quit",
+    "yes": "UI/yes",
+    "no": "UI/no",
+    "text": "UI/are_you_sure_you_want_to_quit",
+    "prefab": "dialog_prompt"
+  }
+]

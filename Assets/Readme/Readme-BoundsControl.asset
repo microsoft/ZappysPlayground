@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-BoundsControl
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Bounds Control
+  sections:
+  - heading: 
+    text: BoundsControl provides an automatically-sized bounding box, along with
+      manipulation affordances for rotation and scale.
+    linkText: 
+    url: 
+  - heading: 
+    text: In MRTK 2.x, BoundsControl was mainly runtime-generated through the use
+      of configuration ScriptableObjects. In MRTK3, the setup and customization of
+      BoundsControl has been significantly simplified. The bounds visuals and handles
+      are simply a customizable prefab that BoundsControl instantiates at runtime.
+      Developers can tweak and customize the visuals prefab, or even build new bounds
+      visuals from scratch. We provide standard bounds visuals implementations, following
+      the new Mixed Reality Design Language.
+    linkText: 
+    url: 
+  - heading: 
+    text: The new visuals offer streamlined visual feedback that illustrates the
+      user's intent and manipulation of the object with minimally intrusive visual
+      noise.
+    linkText: MRTK3 Wiki
+    url: https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/186/Bounds-control
+  - heading: 
+    text: In MSPlayground we use BoundsControl to control orientation of the Wind
+      Turbines to face the window and increase their power. Refer to the Turbine
+      prefab [Assets/Experimental/TurbineTest/Prefabs/Turbine.prefab] and locate
+      the Bounds Control (Script) in the Inspector. This example limits the enabled
+      handles to Rotation-only.
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 0

@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI
+  m_TableCollectionNameGuidString: ae201deb918a41849a1d22447a0adc19
+  m_Entries:
+  - m_Id: 14680723456
+    m_Key: battery_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 462984712192
+    m_Key: level_low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1047368699904
+    m_Key: battery_charging
+    m_Metadata:
+      m_Items: []
+  - m_Id: 398613969244160
+    m_Key: test
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9088518016102400
+    m_Key: recommendations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10073177130692608
+    m_Key: settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10133836719616000
+    m_Key: theming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134047839907840
+    m_Key: theme_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134142606012416
+    m_Key: sound_effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134155616743424
+    m_Key: ui_colour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134206837583872
+    m_Key: custom_sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134294557257728
+    m_Key: mrtk_sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134332524097536
+    m_Key: jump_to_specific_part_of_experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134401893691392
+    m_Key: jump_to_feature
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134449947832320
+    m_Key: change_name_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750561050726400
+    m_Key: are_you_sure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750704206516224
+    m_Key: yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750730731294720
+    m_Key: no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12693668483985408
+    m_Key: data_binding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12693702185218048
+    m_Key: data_binding_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12706724245041152
+    m_Key: edit_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033145656045568
+    m_Key: restart_experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033152685699072
+    m_Key: reset_spatial_anchors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033154686382080
+    m_Key: rescan_space
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330683197648896
+    m_Key: are_you_sure_you_want_to_restart_the_experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330687232569344
+    m_Key: are_you_sure_you_want_to_reset_spatial_anchors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330687840743424
+    m_Key: are_you_sure_you_want_to_rescan_your_space
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973726105600
+    m_Key: accept
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973772242944
+    m_Key: cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973772242945
+    m_Key: username
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043327754240
+    m_Key: return_to_hub
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697280
+    m_Key: feature_summary_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697281
+    m_Key: feature_summary_subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697282
+    m_Key: start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697283
+    m_Key: continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139453227008
+    m_Key: view_features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139503558656
+    m_Key: start_experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139503558657
+    m_Key: experience_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752960
+    m_Key: blue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752961
+    m_Key: red
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752962
+    m_Key: green
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752963
+    m_Key: robot_language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752964
+    m_Key: voice_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21729139507752965
+    m_Key: voice_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302080208896
+    m_Key: got_it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302134734848
+    m_Key: are_you_sure_you_want_to_leave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302134734849
+    m_Key: are_you_sure_you_want_to_quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302134734850
+    m_Key: developer_options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260302134734851
+    m_Key: quit_app
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9401436606464
+    m_Key: welcome
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1646350605496
