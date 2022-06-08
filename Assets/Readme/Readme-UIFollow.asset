@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-UIFollow
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: UI Follow (Solver)
+  sections:
+  - heading: 
+    text: UI Follow enables virtual objects and UI components to maintain their position
+      with respect to the user while they move around the scene.
+    linkText: 
+    url: 
+  - heading: 
+    text: The Follow class positions an element in front of the tracked target relative
+      to its local forward axis. The element can be loosely constrained (also known
+      as tag along) so that it doesn't follow until the tracked target moves beyond
+      user-defined bounds.
+    linkText: 
+    url: 
+  - heading: 
+    text: It works similarly to the RadialView solver, with additional controls to
+      manage Max Horizontal & Vertical View Degrees and mechanisms to alter the object's
+      Orientation.
+    linkText: MRTK3 Wiki
+    url: https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/212/solver?anchor=follow
+  - heading: 
+    text: In MSPlayground most UI panels are using the UI Follow solver. Refer to
+      the panel_nc_dialog examples [Assets/MSPlayground/Common/Resources/Prefabs/UI
+      Panels/panel_nc_dialog.prefab] and locate Solver Handler and Follow in the
+      Inspector.
+    linkText: 
+    url: 
+  - heading: 
+    text: "A Solver is used by adding a Solver Handler to an object which identifies
+      the tracking target and is responsible for updating one or more Solvers. This
+      example is configured to track the user\u2019s head."
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 0

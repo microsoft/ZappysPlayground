@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Tooltips Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Tooltips
+  m_TableCollectionNameGuidString: 4b6f854f55780ee4eb03c4304e628e1b
+  m_Entries:
+  - m_Id: 7403606016
+    m_Key: title_data_binding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67352793088
+    m_Key: desc_data_binding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1763181664538624
+    m_Key: title_hand_constraint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1763181719064576
+    m_Key: desc_hand_constraint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328266055680
+    m_Key: title_directional_arrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193024
+    m_Key: desc_directional_arrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193025
+    m_Key: title_gaze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193026
+    m_Key: desc_gaze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193027
+    m_Key: title_scene_understanding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193028
+    m_Key: desc_scene_understanding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193029
+    m_Key: title_surface_magnetism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193030
+    m_Key: desc_surface_magnetism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193031
+    m_Key: title_spatial_audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193032
+    m_Key: desc_spatial_audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193033
+    m_Key: title_spatial_anchors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193034
+    m_Key: desc_spatial_anchors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193035
+    m_Key: title_follow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193036
+    m_Key: desc_follow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193037
+    m_Key: title_near_and_far
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193038
+    m_Key: desc_near_and_far
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193039
+    m_Key: title_ux_controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193040
+    m_Key: desc_ux_controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193041
+    m_Key: title_bounds_controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193042
+    m_Key: desc_bounds_controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235268251648
+    m_Key: tooltip_ux_controls_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194688
+    m_Key: tooltip_ux_controls_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194689
+    m_Key: tooltip_surface_magnetism_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194690
+    m_Key: tooltip_surface_magnetism_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194691
+    m_Key: tooltip_azure_spatial_anchors_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194692
+    m_Key: tooltip_azure_spatial_anchors_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194693
+    m_Key: tooltip_spatial_audio_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194694
+    m_Key: tooltip_spatial_audio_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194695
+    m_Key: tooltip_follow_ui_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194696
+    m_Key: tooltip_follow_ui_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7998221215494144
+    m_Key: tooltip_theming_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7998221265825792
+    m_Key: tooltip_theming_desc
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1649373311071

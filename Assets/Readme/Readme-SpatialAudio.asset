@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-SpatialAudio
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Spatial Audio
+  sections:
+  - text: "In real life, spatial sound is vital. When someone calls your name, you know which way to look. If you drop a coin on the sidewalk, you can tell which way it has rolled. Why? Because you can hear \u201Cspatially\u201D--in other words, you can tell where in your environment the sound is occurring."
+  - text: "In a mixed reality app, you may have to look up, down, from side to side, or behind you to find something that's happening. At times, it can be unclear where you should look. Spatial sound connects holograms more deeply to the mixed-reality world and supplies information about the environment and object state. You can provide cues from the direction you want to draw attention to; this helps users to maintain awareness of their real-world surroundings and can guide them to their next steps. This increases user confidence in gesture and voice interactions."
+    linkText: Reference
+    url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-sound
+  - text: "Most of the audio components present in the MSPlayground project use Spatial Audio. To enable Spatial Audio in your project, ensure that you have added the Microsoft Spatializer package through the Microsoft Mixed Reality Feature Tool."
+    linkText: Microsoft Spatializer
+    url: https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/spatial-sound-in-unity
+  - linkText: Microsoft Mixed Reality Feature Tool
+    url: https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool
+  - text: "Refer to the Turbine prefab [Assets/Experimental/TurbineTest/Prefabs/Turbine.prefab] and locate the Audio Source component in the Inspector. This example uses the Master Mixer group [Assets/MSPlayground/common/Audio/Master.mixer] and has the Spatial Blend set to 1 (Full 3D)."
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset  
+  loadedLayout: 0

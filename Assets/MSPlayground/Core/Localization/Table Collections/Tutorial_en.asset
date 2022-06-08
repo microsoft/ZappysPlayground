@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 478926d6e51850b4f840f8256893dc16, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1465412886335488
+    m_Localized: "\u201COh no it looks like theres an issue with some turbines. Examine
+      the turbine to find the issue, then use the part selection on your wrist menu
+      to find the appropriate part\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22089425794764800
+    m_Localized: Hi this should show up on VR (Quest)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22089425836707840
+    m_Localized: Hi this should show up if you are on Hololens
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-CrossDeviceSupport
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Cross-Device Support
+  sections:
+  - heading: 
+    text: MRTK-Unity is a Microsoft-driven project that provides a set of components
+      and features, used to accelerate cross-platform MR app development in Unity.
+      Its functions include cross-platform input system and building blocks for spatial
+      interactions and UI, rapid prototyping via in-editor simulation that allows
+      you to see changes immediately, and an extensible framework that provides you
+      the ability to swap out core components.
+    linkText: 
+    url: 
+  - heading: 
+    text: The list of platforms and devices supported include OpenXR, Windows Mixed
+      Reality, Oculus, OpenVR, Ultraleap Hand Tracking, and Mobile on Microsoft HoloLens,
+      Microsoft HoloLens 2, Windows Mixed Reality headsets, Oculus Quest, Oculus
+      Rift, HTC Vive, and the Ultraleap Leap Motion controller.
+    linkText: Reference
+    url: https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/216/Welcome-to-MRTK3
+  - heading: 
+    text: The MSPlayground has been designed to support both AR and VR platforms
+      using the Microsoft HoloLens 2 AR device and the Oculus Quest 2 VR device.
+      There are significant differences between the two platforms which must be managed
+      and supported to support both in the same project. The MSPlayground project
+      has been configured to use a custom VRBUILD compiler flag to manage the code
+      differences and support compilation for either platform.
+    linkText: 
+    url: 
+  - heading: 
+    text: "The VRBUILD compiler flag can be set by opening Project Settings, and
+      navigating to Player > Other Settings > Script Compilation > Scripting Define
+      Symbols and adding \u201CVRBUILD\u201D to the list."
+    linkText: 
+    url: 
+  - heading: 
+    text: 'The following script changes are effected when the VRBUILD compiler flag
+      is set:'
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022  Controller support is added for the Oculus controller. The BootstrapScene
+      [Assets/MSPlayground/Core/Bootstrapper/BootstrapScene.unity] object \u201CMRTK
+      XR Rig\u201D has a new MRTK Input \u201CActions.InputActions\u201D which has
+      been added to the InputActionManager. Its actions are then referenced by the
+      ArticulatedHandController input actions."
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022  Anchoring flow is removed. The VR environments for the Hub Scene
+      and Turbines Scene are loaded independently and are contained within the separate
+      Hub VR Environment Scene [Assets/MSPlayground/Hub/Scenes/HubVREnvironment.unity]
+      and Turbines Environment Scene [Assets/MSPlayground/Turbines/Scenes/TurbinesVREnvironment.unity]
+      that have been configured to be loaded additively and are placed centered around
+      the user. Refer to the HubScenarioResources.Start() [Assets/MSPlayground/Hub/Scenes/HubScenarioResources.cs]
+      and the TurbineScenarioResources.Start() [Assets/MSPlayground/Turbines/Scenes/TurbineScenarioResources.cs]
+      methods for the environment loading flow."
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022  VR specific lighting is enabled. VR scenes require their own independent
+      light components with their Mode property set to Baked to provide local ambient
+      light. This differs from the AR lighting which uses a skybox and directional
+      light. Refer to the Lighting Manager [Assets/MSPlayground/Common/Lighting/LightingManager.cs]
+      for management of lighting for each platform."
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022  Dynamically determined object placement is removed. Object placement
+      in the VR environment is done statically with respect to the scene and player.
+      The VR objects are defined in the HubVRRoom [Assets/MSPlayground/Hub/Scripts/HubVRRoom.cs]
+      and TurbinesVRRoom [Assets/MSPlayground/Turbines/Scripts/TurbinesVRRoom.cs]
+      and assigned via the inspector. Refer to TurbineScenarioResources [Assets/MSPlayground/Turbines/Scripts/TurbineScnearioResources.cs]
+      InitializeEnviromentAR() and InitializeEnvironmentVR() methods for platform-specific
+      environment setup."
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022  HandConstraint solver for the Hand Menu is disabled. The HandConstraint
+      solver is replaced by the Follow solver for VR platforms. Refer to the BootstrapScene
+      [Assets/MSPlayground/Core/Bootstrapper/BootstrapScene.unity] object \u201CDebug/CanvasHandMenu\u201D
+      and the HandMenu [Assets/MSPLayground/Common/HandMenu/HandMenu.cs] Start()
+      and VRUpdate() methods for solver setup."
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022  Scale and Position adjustments are required for some UI elements.
+      The MSPlayground project manages these adjustments using the Platform Transform
+      Modifier script [Assets/(?)] which allows us to specify platform-specific position
+      and scale modifications to an object\u2019s transform."
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 1

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f894e7e725da044b028f8ccaf475ec, type: 3}
+  m_Name: Robot_SFX_Theme_B
+  m_EditorClassIdentifier: 
+  SfxByType:
+    entries:
+    - key: 0
+      value:
+      - {fileID: 8300000, guid: 3adbaed2d5070bd479d75135f6b0aa7e, type: 3}
+      - {fileID: 8300000, guid: 77eb1904525951f40a9ad7123197140f, type: 3}
+      - {fileID: 8300000, guid: ec542abe5e70689428dc2ad22f12bfc7, type: 3}
+      - {fileID: 8300000, guid: d0c26d828d22d2749ae16c1ddce8043f, type: 3}
+    - key: 1
+      value:
+      - {fileID: 8300000, guid: 80c89a89d8ebd5849a4c53fa22b85106, type: 3}
+      - {fileID: 8300000, guid: bfb5d900412aaca4f823103d52911bc9, type: 3}
+      - {fileID: 8300000, guid: 7cdbea62cc0a9194fb81aff511b7a0ee, type: 3}
+    - key: 2
+      value:
+      - {fileID: 8300000, guid: f7cb62ea490e3b640bc5835d2872c980, type: 3}
+      - {fileID: 8300000, guid: edd8c3854931494459d4d47f969b9f51, type: 3}

@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TurbinesUIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f4bbdc6f0a999b440be265f0e3ce58be, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c41b9a842ff578f41ba8b2e5ef322e35, type: 3}
+  - {fileID: 21300000, guid: 1e857ce45e943f740bf37a53218f4b1e, type: 3}
+  - {fileID: 21300000, guid: 39cec955a71e76a41b59dcc815df15af, type: 3}
+  - {fileID: 21300000, guid: 2311e6e5a58464647884e7f763f0cabc, type: 3}
+  - {fileID: 21300000, guid: 2471c6468a722aa44adfcb7c8ba448c5, type: 3}
+  - {fileID: 21300000, guid: 66ac3166b03f86c4eb4c51ab6e70b6c6, type: 3}
+  - {fileID: 21300000, guid: 50cbb0a7d6fa719419881ba8ac13d082, type: 3}
+  - {fileID: 21300000, guid: 45a7bdf7d6dd2d64fb33f4811e3644ca, type: 3}
+  - {fileID: 21300000, guid: d2a20fc830e4bfe4b9ca226314a6a671, type: 3}
+  - {fileID: 21300000, guid: 572442c94a7c9a64b8d8ae1650e3eecd, type: 3}
+  - {fileID: 21300000, guid: b194f3e9f8b7f5a4db6d720ea2608e43, type: 3}
+  - {fileID: 21300000, guid: 3096625a9422d47459c9698406996d66, type: 3}
+  - {fileID: 21300000, guid: ffd5e1aa23d843843be039cee8af38f4, type: 3}
+  - {fileID: 21300000, guid: ed763f7bd25981647b864360982d122c, type: 3}
+  - {fileID: 21300000, guid: 4061dffbf02d03948960f6da58360f37, type: 3}
+  - {fileID: 21300000, guid: 395b931d446a64e449c9df8f8bf79813, type: 3}
+  - {fileID: 21300000, guid: 4934e39d0edb6cd4f8a6940a19a01518, type: 3}
+  - {fileID: 21300000, guid: 1a9b270e3acd253449e7ee3c8462d62f, type: 3}
+  - {fileID: 21300000, guid: 53317e3e4d0f98b49a594036b0051e69, type: 3}
+  - {fileID: 21300000, guid: b69d151f713e92f4497515f7fbfc0778, type: 3}
+  - {fileID: 21300000, guid: 8962cdaf5d341ba44beec9f1c869ccde, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Polygon_stroke
+  - outter shadow
+  - turbine_experience_intro
+  - turbine
+  - backing_shadow
+  - potential_power_fill
+  - indicator
+  - limit
+  - power_icon
+  - environment_setup_window
+  - environment_setup_platform
+  - shadow
+  - rim
+  - Polygon
+  - robot_avatar
+  - turbine
+  - backing
+  - knob
+  - background_fill
+  - output_fill
+  - Robot-Start
+  m_RenderDataMap: {}
+  m_Tag: TurbinesUIAtlas
+  m_IsVariant: 0

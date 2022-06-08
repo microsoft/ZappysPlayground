@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-UISystem
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: UI System
+  sections:
+  - text: "The UISystem [Assets/MSPlayground/Core/UI/UISystem.cs] is used to spawn and manage prefabs of PanelModels [Assets/MSPlayground/Core/UI/PanelModel.cs]."
+  - text: "The UI System component currently supports\u003A"
+  - text: "•  Localized texts within prefabs using the Unity Localization package"
+  - text: "•  Spawning complex panels with multiple localization keys used within one prefab (\u201CComplex panels\u201D are configured within a .json file in the Resources folder of the project. These configurations can be referenced by ID in C# scripts.)"
+  - text: "•  Spawning simple panels that populate a default prefab with a singular localization key"
+  - text: "•  Assigning Action callbacks to buttons within panels"
+  - text: "•  Initializing panels with a dictionary of {UnityEngine.Localization.SmartFormat.PersistentVariables.IVariable} objects so that localized texts within panels can be dynamically updated"
+  - text: "•  Despawning panels"
+  - text: "•  Overriding localized texts on certain platforms (Currently only supports the \u201Cvr\u201D override flag, but more overrides can be added in the UISystem Start() method with compiler flags such as VRBUILD)"
+  - heading: Panel Model
+    text: "The Panel Model [Assets/MSPlayground/Core/UI/PanelModel.cs] is a JSON serializable model class for spawning complex panels."
+  - text: "•  Data Model (Field Name / Json Property Name / Type / Description)"
+  - text: "•  ID / id / string / Identifier"
+  - text: "•  PrefabPath / prefab / string / Path to the prefab to use relative to Resources/Prefabs/UI Panels/"
+  - text: "•  PlatformOverrideKeys / override / Dictionary<string, Dictionary<string,string>> / A dictionary of localization keys to override given a platform flag. (e.g. \u201Cvr\u201D)"
+  - text: "•  LocalizationKeys / N/A / Dictionary<string,string> / Any other JSON property aside from the listed properties above are loaded  into the LocalizationKeys dictionary at runtime. The key names are arbitrary."
+  - heading: Example
+    text: "ComplexPanels.json with 1 PanelModel. The model has localized texts (keys\u003A \u201Ctext\u201D, \u201Cyes\u201D, \u201Cno\u201D) using the prefab \u201Cdialog_prompt\u201D, and the \u201Ctext\u201D key is overridden with another localization key on platform override \u201Cvr\u201D."
+  - text: "["
+  - text: "{"
+  - text: "  \u201Cid\u201D\u003A \u201Ctest_platform_override\u201D,"
+  - text: "  \u201Cyes\u201D\u003A \u201CUI/yes\u201D,"
+  - text: "  \u201Cno\u201D\u003A \u201CUI/no\u201D,"
+  - text: "  \u201Ctext\u201D\u003A \u201Ctutorial/test_override_default\u201D,"
+  - text: "  \u201Cprefab\u201D\u003A \u201Cdialog_prompt\u201D,"
+  - text: "  \u201Coverride\u201D\u003A"
+  - text: "  {"
+  - text: "	\u201Dvr\u201D \u003A"
+  - text: "	{"
+  - text: "      \u201Ctext\u201D\u003A \u201Ctutorial/test_override_vr\u201D"
+  - text: "	}"
+  - text: "  }"
+  - text: "}"
+  - text: "]"
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset  
+  loadedLayout: 0

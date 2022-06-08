@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: ae201deb918a41849a1d22447a0adc19, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 14680723456
+    m_Localized: niveau de batterie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 462984712192
+    m_Localized: FAIBLE !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1047368699904
+    m_Localized: Batterie en charge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9401436606464
+    m_Localized: Bienvenue, {Username}
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 398613969244160
+    m_Localized: '{global.username} - {DataBindingTester.Progress} - {floatVariable}
+      - {stringVariable}'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7945133434212352
+    m_Localized: Oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7945159925436416
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7945247909351424
+    m_Localized: "\xCAtes-vous s\xFBr?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750561050726400
+    m_Localized: "\xCAtes-vous s\xFBr?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750704206516224
+    m_Localized: Oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9750730731294720
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9088518016102400
+    m_Localized: Recommandations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10073177130692608
+    m_Localized: "R\xE9glages"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10133836719616000
+    m_Localized: "Th\xE8me"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134047839907840
+    m_Localized: "Le th\xE8me est un excellent moyen de personnaliser votre exp\xE9rience"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134142606012416
+    m_Localized: Effets sonores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134155616743424
+    m_Localized: Couleur de l'interface utilisateur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134206837583872
+    m_Localized: "Sons personnalis\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134294557257728
+    m_Localized: MRTK sonne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134332524097536
+    m_Localized: "Sautez dans une partie sp\xE9cifique de l'exp\xE9rience"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134401893691392
+    m_Localized: "Sauter sur la fonctionnalit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10134449947832320
+    m_Localized: "Changez le nom que M. Bot a utilis\xE9 dans l'exp\xE9rience."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12693668483985408
+    m_Localized: "Liaison des donn\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12706724245041152
+    m_Localized: Modifier le nom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033145656045568
+    m_Localized: "Red\xE9marrer l'exp\xE9rience"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033152685699072
+    m_Localized: "R\xE9initialiser les ancres spatiales"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13033154686382080
+    m_Localized: Espace de sauvetage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330683197648896
+    m_Localized: "\xCAtes-vous s\xFBr de vouloir red\xE9marrer l'exp\xE9rience?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973726105600
+    m_Localized: J'accepte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973772242944
+    m_Localized: Annuler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17315973772242945
+    m_Localized: '{global.username}'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 20240043327754240
+    m_Localized: "Retour \xE0 Hub"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697280
+    m_Localized: "R\xE9sum\xE9 des fonctionnalit\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697281
+    m_Localized: "Faites d\xE9filer pour afficher toutes les fonctionnalit\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697282
+    m_Localized: "D\xE9marrer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20240043369697283
+    m_Localized: Continuez
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12693702185218048
+    m_Localized: "Changez le nom de {global.username} associ\xE9 \xE0 la liaison
+      des donn\xE9es."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00104af18c08000000100a8c896a010000100a64662c3b000170a251c9843d00

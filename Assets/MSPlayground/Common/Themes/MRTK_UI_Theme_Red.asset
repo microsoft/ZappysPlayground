@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e402d6a6525d647b1130b997598f7e, type: 3}
+  m_Name: MRTK_UI_Theme_Red
+  m_EditorClassIdentifier: 
+  MatsCanvas:
+    InnerPlateMaterial: {fileID: 2100000, guid: 7e385094ab6c8d748a2d9ebb49f6aca6, type: 2}
+  MatsNonCanvas:
+    BackPlateMaterial: {fileID: 2100000, guid: fce739256baed6348a90abcb92597854, type: 2}
+  ButtonColor_Yes: {r: 0.7058824, g: 0.23137255, b: 0.09803922, a: 1}
+  ButtonColor_No: {r: 0.4627451, g: 0.1254902, b: 0.02745098, a: 1}
+  InputFieldColor: {r: 0.4433962, g: 0.19803207, b: 0.12758097, a: 1}
+  ToggleQuadColor: {r: 0.7264151, g: 0.19811885, b: 0.044544343, a: 1}

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-Theming
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Theming
+  sections:
+  - heading: 
+    text: Theming is the ability to wholesale change the visual aesthetic of many
+      UX elements at once. Typically, all of the data needed to specify a theme is
+      provided by a single Data Source, such as a Scriptable Object. It is also possible
+      for theming data to be provided as needed, or divided into logical groups based
+      on its purpose.
+    linkText: 
+    url: 
+  - heading: 
+    text: Theming uses all of the plumbing of data sources and data consumers. It
+      is possible to theme any hierarchy of GameObjects whether they are static or
+      are dynamically data bound to other data sources. This allows for both data
+      binding and theming to be applied in combination. It is even possible to theme
+      the data coming from another data source.
+    linkText: 
+    url: 
+  - heading: 
+    text: Data Binding and Theming can co-exist for a single UX element. Any individual
+      UX element can be simultaneously themed and data bound. In this scenario, the
+      typical flow is that the datum coming from a DataSource is used to derive the
+      correct theme keypath. This keypath is then used to retrieve an object from
+      the theme Data Source, typically a ScriptableObject profile, but potentially
+      any source of data that can resolve a keypath.
+    linkText: MRTK3 Wiki
+    url: https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/176/Theming-and-databinding
+  - heading: 
+    text: 'In MSPlayground, data binding [link] is used to display themed dialogs
+      and sounds via the UIThemeProfile [Assets/MSPlayground/Core/UI/UIThemeProfile.cs].
+      The UI Theme can be modified through the Hand Menu in the following ways:'
+    linkText: See Data Binding
+    url: Assets/Readme/Readme-DataBinding.asset
+  - heading: 
+    text: "\u2022  Adjusting materials and colors to one of the 3 UI themes (blue,
+      red, green) which applies to any MaskableGraphics \u2013 MaskableGraphics objects
+      include UnityEngine.UI.Text, UnityEngine.UI.Image, UnityEngine.UI.RawImage,
+      Microsoft.MixedReality.GraphicsTools.CanvasElementRoundedRect, and Microsoft.MixedReality.GraphicsTools.CanvasElementBeveledRect."
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022  Adjusting the sound effect selection for Zappy by selecting one
+      of two different voice sets."
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 0

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ScenePortals_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 141862e348883aa4790053e68ac913eb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 49975791616
+    m_Localized: Touch or airtap to enter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50013540352
+    m_Localized: Features Inside
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50017734656
+    m_Localized: Turbine Experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50026123264
+    m_Localized: "\u2022 Surface Magnetism\n\u2022 Data Binding\n\u2022 UX Controls\n\u2022
+      Bounds Controls\n\u2022 Hand Menus\n\u2022 Directional Indicator\n\u2022 Gaze\n\u2022
+      Scene Understanding\n\u2022 Spatial Audio\n\u2022 Azure Spatial Anchors\n\u2022
+      Follow UI\n\u2022 Near and Far Interactions"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38628793913344
+    m_Localized: "\u2022 Surface Magnetism<br>\n\u2022 Data Binding<br>\n\u2022 UX
+      Controls<br>\n\u2022 Bounds Controls<br>\n\u2022 Hand Constraint Palm Up<br>\n\u2022
+      Directional Arrow<br>\n\u2022 Gaze<br>\n\u2022 Scene Understanding<br>\n\u2022
+      Spatial Audio<br>\n\u2022 Spatial Anchors<br>\n\u2022 Follow<br>\n\u2022 Near
+      and Far Interactions<br>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6145304802496512
+    m_Localized: "\u2022 Surface Magnetism\n\u2022 Data Binding\n\u2022 UX Controls\n\u2022
+      Bounds Controls\n\u2022 Directional Indicator\n\u2022 Gaze\n\u2022 Spatial
+      Audio\n\u2022 Follow UI\n\u2022 Near and Far Interactions"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tooltips_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 4b6f854f55780ee4eb03c4304e628e1b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 7403606016
+    m_Localized: "Liaison des donn\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67352793088
+    m_Localized: "La liaison des donn\xE9es vous permet de cr\xE9er une interface
+      utilisateur bas\xE9e sur les donn\xE9es."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1763181664538624
+    m_Localized: Contrainte de la main Palmier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1763181719064576
+    m_Localized: "Les menus \xE0 main vous permet d'\xE9lever rapidement l'interface
+      utilisateur attach\xE9e \xE0 la main. Puisqu'il est accessible \xE0 tout moment
+      et peut \xEAtre affich\xE9 et cach\xE9 facilement, il est id\xE9al pour des
+      actions rapides."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328266055680
+    m_Localized: Indicateur directionnel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193024
+    m_Localized: "Tout ne sera pas visible \xE0 la fois. Attirez l'attention des
+      utilisateurs sur quelque chose de sp\xE9cifique en utilisant un indicateur
+      directionnel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193025
+    m_Localized: Regard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193026
+    m_Localized: "\xC0 l'aide du suivi des yeux, vous pouvez interagir ou modifier
+      l'\xE9tat d'\xE9l\xE9ments distants. Il s'agit d'une fonctionnalit\xE9 utile
+      pour montrer plus d'informations sur un objet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193027
+    m_Localized: "Compr\xE9hension de la sc\xE8ne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193028
+    m_Localized: "La compr\xE9hension de la sc\xE8ne analyse vos subordonn\xE9es
+      en cr\xE9ant une structure de maillage de salle d'environnement \xE9tanche
+      sans encombrement."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193029
+    m_Localized: "Magn\xE9tisme de surface"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193030
+    m_Localized: "Le magn\xE9tisme de surface est un outil utile pour organiser des
+      objets dans un motif fixe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193031
+    m_Localized: Audio spatial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193032
+    m_Localized: "Le son spatial \xE9mule le fonctionnement de l'audition humaine,
+      fournissant les indices n\xE9cessaires pour identifier les emplacements sonores
+      dans l'espace mondial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193033
+    m_Localized: ANCORS SPATIAL AZURES (ASA)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193034
+    m_Localized: "Les ancres spatiales repr\xE9sentent un point important dans le
+      monde que le syst\xE8me suit au fil du temps."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193035
+    m_Localized: UI Suivez
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193036
+    m_Localized: "L'interface utilisateur permet \xE0 l'interface utilisateur de
+      voyager dans un espace avec l'utilisateur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193037
+    m_Localized: Interaction de loin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193038
+    m_Localized: L'interaction loin et proche vous permet d'interagir avec les objets
+      quelle que soit la distance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193039
+    m_Localized: "Contr\xF4les UX"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193040
+    m_Localized: "Les commandes UX permet \xE0 l'utilisateur de contr\xF4ler instinctement
+      les objets et les contr\xF4les."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193041
+    m_Localized: "Contr\xF4le des limites"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1769328312193042
+    m_Localized: "Le contr\xF4le des limites fournit des fonctionnalit\xE9s de base
+      pour transformer des objets dans la r\xE9alit\xE9 mixte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235268251648
+    m_Localized: "Contr\xF4les UX"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194688
+    m_Localized: "Les contr\xF4les UX permet \xE0 l'utilisateur de contr\xF4ler instinctivement
+      les objets et les contr\xF4les."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194689
+    m_Localized: "Magn\xE9tisme de surface"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194690
+    m_Localized: "Le magn\xE9tisme de surface aide \xE0 orienter les objets holographiques
+      aux surfaces du monde r\xE9el."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194691
+    m_Localized: ANCORS SPATIAL AZURES (ASA)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194692
+    m_Localized: "Les ancres spatiales repr\xE9sentent un point important dans le
+      monde que le syst\xE8me suit au fil du temps."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194693
+    m_Localized: Audio spatial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194694
+    m_Localized: "L'audio spatial imite l'audition humaine pour vous aider \xE0 localiser
+      des objets dans l'espace 3D."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194695
+    m_Localized: UI Suivez
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6861235310194696
+    m_Localized: "L'interface utilisateur s'assure que certains \xE9l\xE9ments d'interface
+      restent toujours devant vous."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

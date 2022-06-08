@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7176170048603925882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7176170048603925884}
+  - component: {fileID: 7176170048603925885}
+  m_Layer: 29
+  m_Name: VirtualRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7176170048603925884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176170048603925882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7176170048603925885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176170048603925882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252ff3fc678bd1049a8b5ac17c8379c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Platforms: []
+  Walls: []
+  Floor: {fileID: 0}
+  Ceiling: {fileID: 0}
+  _virtualWallPrefab: {fileID: 7296070426112047297, guid: 3150c0c2c9f82024592dcfc462410fa8, type: 3}
+  _ceilingDebugColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.3}
+  _floorDebugColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.3}
+  _wall0DebugColor: {r: 0.5, g: 0, b: 0, a: 0.3}
+  _wall1DebugColor: {r: 0, g: 0.3, b: 0.3, a: 0.3}
+  _platformDebugColor: {r: 0.05937249, g: 0, b: 0.9622642, a: 0.3}

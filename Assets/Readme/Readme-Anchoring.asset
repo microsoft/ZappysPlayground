@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme-Anchoring
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Anchoring
+  sections:
+  - heading: 
+    text: A spatial anchor represents an important point in the world that the system
+      tracks over time. Each anchor has an adjustable coordinate system, based on
+      other anchors or frames of reference, to ensure anchored holograms stay precisely
+      in place. Rendering a hologram in an anchor's coordinate system gives you the
+      most precise positioning for that hologram at any given time. This comes at
+      the cost of small adjustments over time to the hologram's position as the system
+      continually moves it back into place based on the real world.
+    linkText: Reference
+    url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors
+  - heading: 
+    text: "In MSPlayground we provide examples of two methods of anchoring: local
+      anchoring using the XRAnchorStore, and Azure Spatial Anchors
+      (ASA) which facilitates sharing across devices.  The default anchoring mechanism
+      in this project is Local Anchoring.  ASA can be enabled in the project by defining
+      the compiler flag ASA_ENABLED and configuring the project to connect to your
+      Azure subscription."
+    linkText: 
+    url: 
+  - heading: 
+    text: "Regardless of the anchoring method chosen, once the anchors have been
+      set the usage of those anchors is the same. After the user\u2019s environment
+      has been scanned and a Virtual Room has been generated, we create a single
+      anchor for that room. From that anchor, relative transforms for each surface
+      plane that define the VirtualRoom [Assets/MSPlayground/Core/Spatial/VirtualRoom.cs]
+      are calculated and saved to disk as a Gamestate [Assets/MSPLayground/Core/Gamestate/Gamestate.cs]
+      via the GamestateManager [Assets/MSPLayground/Core/Gamestate/GamestateManager.cs]
+      and using the anchor\u2019s ID as the filename."
+    linkText: 
+    url: 
+  - heading: 
+    text: During game startup, the VirtualRoom can be rebuilt from the saved anchor
+      relative transforms by looking up all the saved Gamestates, locating the anchors,
+      and loading the transforms from storage.
+    linkText: 
+    url: 
+  - heading: Local Anchoring
+    text: "The LocalAnchorManager [Assets/MSPlayground/Core/LocalAnchors/LocalAnchorManager.cs] demonstrates an example of saving,
+      detecting, and tracking ARAnchors. ARAnchors can be persisted on a single device
+      via the XRAnchorStore. This allows the application to identify and calculate
+      the same location in the real world across multiple sessions on the same device."
+    linkText: 
+    url: 
+  - heading: Azure Spatial Anchors
+    text: You can also persist and share spatial anchors across application sessions
+      and across devices using Azure Spatial Anchors which can persist holograms
+      across time and devices and enables users to see the hologram appear at the
+      same place in the real world.
+    linkText: Reference
+    url: https://docs.microsoft.com/en-us/azure/spatial-anchors/
+  - heading: 
+    text: The ASAManager [Assets/MSPlayground/Core/ASA/ASAManager.cs] demonstrates
+      an example of saving and loading using ASA. Although MSPlayground does not
+      demonstrate sharing anchors across multiple devices, this would be accomplished
+      by sharing anchor IDs as the anchors and associated data is stored in the Azure
+      Cloud.
+    linkText: 
+    url: 
+  - heading: 
+    text: To enable ASA in the MSPlayground example, the project has been configured
+      to use a custom ASA_ENABLED compiler flag to manage the code differences and
+      support compilation for either type of anchor.
+    linkText: 
+    url: 
+  - heading: 
+    text: "The ASA_ENABLED compiler flag can be set by opening Project Settings,
+      and navigating to Player > Other Settings > Script Compilation > Scripting
+      Define Symbols and adding \u201CASA_ENABLED\u201D to the list."
+    linkText: 
+    url: 
+  - heading: 
+    text: "To use ASA, you will also be required to possess an Azure Subscription
+      and generate a Spatial Anchor API key to link the project to your account.
+      If you possess an Azure Subscription and API key you can configure the project
+      by opening the BoostrapScene [Assets/MSPlayground/Core/Bootstrapper/BootstrapScene.unity]
+      and configuring the \u201CAzureSpatialAnchors\u201D object by entering your
+      Spatial Anchors Account Id, Key, and Domain."
+    linkText: 
+    url: 
+  - heading: 
+    text: Please see Azure Spatial Anchors for more information about creating an
+      Azure Subscription and obtaining a Spatial Anchor API key.
+    linkText: Azure Spatial Anchors
+    url: https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-hololens?tabs=azure-portal#create-a-spatial-anchors-resource
+  - heading: 
+    text: 
+    linkText: Back to the Index
+    url: Assets/Readme/Readme-Index.asset
+  loadedLayout: 1
