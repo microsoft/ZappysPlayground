@@ -37,8 +37,6 @@ namespace MSPlayground.Scenarios.Turbines
 
         public override void SkipState()
         {
-            _scenarioResources.Robot.SetActive(true);
-            
             EndState();
         }
         

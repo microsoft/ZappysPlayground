@@ -306,6 +306,11 @@ MonoBehaviour:
       find the right parts and make repairs.
     m_Metadata:
       m_Items: []
+  - m_Id: 31428883660804096
+    m_Localized: We need somewhere to put this virtual Window. Use air tap to pick
+      up the Window and place it in one of the highlighted areas.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
