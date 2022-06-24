@@ -31,7 +31,7 @@
                     "path": "<XRHMD>/centerEyePosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -42,7 +42,7 @@
                     "path": "<XRHMD>/centerEyeRotation",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotation",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -196,7 +196,7 @@
                     "path": "<XRController>{LeftHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "UI Press",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -218,7 +218,7 @@
                     "path": "<XRController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Teleport Mode Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -229,7 +229,7 @@
                     "path": "<XRController>{LeftHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Teleport Mode Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -251,7 +251,7 @@
                     "path": "<XRController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Teleport Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -273,7 +273,7 @@
                     "path": "<XRController>{LeftHand}/pointerPosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -284,7 +284,7 @@
                     "path": "<XRController>{LeftHand}/devicePosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -295,7 +295,7 @@
                     "path": "<XRController>{LeftHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -306,7 +306,7 @@
                     "path": "<XRController>{LeftHand}/trigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -328,7 +328,7 @@
                     "path": "<XRController>{LeftHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -383,7 +383,7 @@
                     "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -394,7 +394,7 @@
                     "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -405,7 +405,7 @@
                     "path": "<XRController>{LeftHand}/Primary2DAxis/x",
                     "interactions": "",
                     "processors": "Clamp(min=-1),Invert",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -416,7 +416,7 @@
                     "path": "<XRController>{LeftHand}/Primary2DAxis/x",
                     "interactions": "",
                     "processors": "Clamp(max=1)",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -438,7 +438,7 @@
                     "path": "<XRController>{LeftHand}/Primary2DAxis/y",
                     "interactions": "",
                     "processors": "Clamp(max=1)",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -449,7 +449,7 @@
                     "path": "<XRController>{LeftHand}/Primary2DAxis/y",
                     "interactions": "",
                     "processors": "Clamp(min=-1),Invert",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -460,7 +460,7 @@
                     "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -471,7 +471,7 @@
                     "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -515,7 +515,7 @@
                     "path": "<XRController>{LeftHand}/deviceRotation",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "DeviceRotation",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -526,7 +526,7 @@
                     "path": "<XRController>{LeftHand}/devicePosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "DevicePosition",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -537,7 +537,7 @@
                     "path": "<XRController>{LeftHand}/trigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "UI Press",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -713,7 +713,7 @@
                     "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -724,7 +724,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=1)",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Teleport Mode Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -735,7 +735,7 @@
                     "path": "<XRController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Teleport Mode Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -746,7 +746,7 @@
                     "path": "<XRController>{RightHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Teleport Mode Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -757,7 +757,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=-1,sweepBehavior=3)",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Teleport Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -768,7 +768,7 @@
                     "path": "<XRController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Teleport Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -790,7 +790,7 @@
                     "path": "<XRController>{RightHand}/pointerPosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -801,7 +801,7 @@
                     "path": "<XRController>{RightHand}/devicePosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -812,7 +812,7 @@
                     "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "UI Press",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -845,7 +845,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=12,sweepBehavior=1)",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -856,7 +856,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=2,sweepBehavior=2)",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -878,7 +878,7 @@
                     "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -889,7 +889,7 @@
                     "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -900,7 +900,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis/x",
                     "interactions": "",
                     "processors": "Clamp(min=-1),Invert",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -911,7 +911,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis/x",
                     "interactions": "",
                     "processors": "Clamp(max=1)",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Rotate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -933,7 +933,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis/y",
                     "interactions": "",
                     "processors": "Clamp(max=1)",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -944,7 +944,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis/y",
                     "interactions": "",
                     "processors": "Clamp(min=-1),Invert",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -955,7 +955,7 @@
                     "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -966,7 +966,7 @@
                     "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -1010,7 +1010,7 @@
                     "path": "<XRController>{RightHand}/devicePosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "DevicePosition",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1021,7 +1021,7 @@
                     "path": "<XRController>{RightHand}/deviceRotation",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller;Generic VR Controller",
                     "action": "DeviceRotation",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1111,7 +1111,7 @@
                     "path": "*/{gaze}/position",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1122,7 +1122,7 @@
                     "path": "<OculusHMD>/centerEyePosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic VR Controller",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1133,7 +1133,7 @@
                     "path": "<XRHMD>/devicePosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic VR Controller",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1144,7 +1144,7 @@
                     "path": "*/{gaze}/rotation",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller",
                     "action": "Rotation",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1155,7 +1155,7 @@
                     "path": "<XRHMD>/centerEyeRotation",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic VR Controller",
                     "action": "Rotation",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1166,7 +1166,7 @@
                     "path": "<XRHMD>/deviceRotation",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic VR Controller",
                     "action": "Rotation",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1177,7 +1177,7 @@
                     "path": "*/{gaze}/trackingState",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Windows MR Controller",
                     "action": "Tracking State",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1188,18 +1188,18 @@
                     "path": "<OculusHMD>/trackingState",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic VR Controller",
                     "action": "Tracking State",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "6bc7204c-6f42-425c-b9ba-241617188645",
+                    "id": "47acb5e6-0771-456a-b784-8915faea763c",
                     "path": "<OpenXRHmd>/trackingState",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic VR Controller",
                     "action": "Tracking State",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1209,8 +1209,8 @@
     ],
     "controlSchemes": [
         {
-            "name": "Generic XR Controller",
-            "bindingGroup": "Generic XR Controller",
+            "name": "Windows MR Controller",
+            "bindingGroup": "Windows MR Controller",
             "devices": [
                 {
                     "devicePath": "<XRController>{LeftHand}",
@@ -1229,6 +1229,37 @@
                 },
                 {
                     "devicePath": "<WMRHMD>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Generic VR Controller",
+            "bindingGroup": "Generic VR Controller",
+            "devices": [
+                {
+                    "devicePath": "<XRController>{LeftHand}",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<XRController>{RightHand}",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<OpenVRHMD>",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<OculusHMD>",
                     "isOptional": true,
                     "isOR": false
                 }
