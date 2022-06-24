@@ -1387,9 +1387,7 @@ GameObject:
   - component: {fileID: 2382034576717090888}
   - component: {fileID: -7862292917301526520}
   - component: {fileID: 1634898900}
-  - component: {fileID: 1897540244180707902}
-  - component: {fileID: 1634898901}
-  - component: {fileID: 8280017756344519990}
+  - component: {fileID: 6318400008531938270}
   - component: {fileID: 36343618}
   - component: {fileID: 1581753895}
   - component: {fileID: 1405355777019901205}
@@ -1757,7 +1755,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &1897540244180707902
+--- !u!65 &6318400008531938270
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1768,34 +1766,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.16055542, y: 0.16631511, z: 0.012549058}
-  m_Center: {x: -0.004334241, y: 0.2038752, z: 0.020765454}
---- !u!65 &1634898901
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7209933170534100577}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.04, y: 0.1632446, z: 0.04}
-  m_Center: {x: 0, y: 0.09108181, z: 0}
---- !u!65 &8280017756344519990
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7209933170534100577}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.049167704, y: 0.02937752, z: 0.07273574}
-  m_Center: {x: 0, y: 0.18601617, z: -0.0026920065}
+  m_Size: {x: 0.18, y: 0.14364704, z: 0.06895347}
+  m_Center: {x: 0, y: 0.21217035, z: -0.0021727234}
 --- !u!65 &36343618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2337,6 +2309,7 @@ MonoBehaviour:
   _rectTransform: {fileID: 656951291443548875}
   _statefulInteractable: {fileID: 0}
   _audioSource: {fileID: 0}
+  _activateOnAnimateIn: []
   _destroyCondition: 2
   _onGazeSlicedImage: {fileID: 8979434282699874856}
 --- !u!114 &625587459164366478
