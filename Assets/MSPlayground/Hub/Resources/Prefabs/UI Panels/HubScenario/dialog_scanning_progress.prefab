@@ -71,6 +71,22 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3230089781627793603, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 3230089781627793603, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 3230089781923272544, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 3230089781923272544, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
     - target: {fileID: 3405697053728846619, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -186,6 +202,18 @@ PrefabInstance:
     - target: {fileID: 6661608629802631717, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
       propertyPath: m_Name
       value: dialog_scanning_progress
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871912471136055099, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 6871912471136055099, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 8875202644952883574, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9037438818484071073, guid: 7815bf476bd6f2e4f8ffec16b71314e3, type: 3}
       propertyPath: m_AnchorMax.y
