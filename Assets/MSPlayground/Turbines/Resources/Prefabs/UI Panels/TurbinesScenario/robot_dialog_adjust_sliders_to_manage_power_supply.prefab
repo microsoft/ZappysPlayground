@@ -418,16 +418,16 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 1.2330322, y: -0.82418823, z: 0.00022199978}
-  - {x: 1.2354313, y: -0.8573464, z: 0.00016183783}
-  - {x: 1.2457912, y: -0.88028884, z: 0.00011366388}
-  - {x: 1.2618515, y: -0.89590806, z: 0.00007614592}
-  - {x: 1.2813522, y: -0.907097, z: 0.00004795195}
-  - {x: 1.3020325, y: -0.91674805, z: 0.000027749973}
-  - {x: 1.3216325, y: -0.92775416, z: 0.000014207983}
-  - {x: 1.337892, y: -0.94300795, z: 0.0000059939916}
-  - {x: 1.3485508, y: -0.9654021, z: 0.0000017759963}
-  - {x: 1.3440247, y: -1.0431824, z: 0}
+  - {x: 1.2330322, y: -0.8225708, z: 0.00022199978}
+  - {x: 1.2354388, y: -0.8561673, z: 0.00016183783}
+  - {x: 1.2458031, y: -0.87946093, z: 0.00011366388}
+  - {x: 1.2618659, y: -0.89535415, z: 0.00007614592}
+  - {x: 1.2813672, y: -0.90674955, z: 0.00004795195}
+  - {x: 1.3020477, y: -0.9165497, z: 0.000027749973}
+  - {x: 1.321648, y: -0.9276572, z: 0.000014207983}
+  - {x: 1.3379084, y: -0.94297475, z: 0.0000059939916}
+  - {x: 1.3485694, y: -0.96540487, z: 0.0000017759963}
+  - {x: 1.3440552, y: -1.0432129, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.02
@@ -674,6 +674,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 125081285731576424, guid: 481ed04efb17c3542b72bc00ff4d9e23, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 125081285731576424, guid: 481ed04efb17c3542b72bc00ff4d9e23, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
     - target: {fileID: 125081285731576426, guid: 481ed04efb17c3542b72bc00ff4d9e23, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -708,11 +716,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2267383565794678270, guid: 481ed04efb17c3542b72bc00ff4d9e23, type: 3}
       propertyPath: m_Size.y
-      value: 123.95999
+      value: 122.009995
       objectReference: {fileID: 0}
     - target: {fileID: 2267383565794678270, guid: 481ed04efb17c3542b72bc00ff4d9e23, type: 3}
       propertyPath: m_Center.y
-      value: -61.979996
+      value: -61.004997
       objectReference: {fileID: 0}
     - target: {fileID: 2603262221844237444, guid: 481ed04efb17c3542b72bc00ff4d9e23, type: 3}
       propertyPath: m_Pivot.x

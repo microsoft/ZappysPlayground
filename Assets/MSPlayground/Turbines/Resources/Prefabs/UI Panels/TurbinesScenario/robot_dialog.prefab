@@ -185,12 +185,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4391727339346159282, guid: e833a9d7967a28b479f37602368c0639, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5542827411900955282, guid: e833a9d7967a28b479f37602368c0639, type: 3}
       propertyPath: m_margin.y
       value: 65
       objectReference: {fileID: 0}
+    - target: {fileID: 5542827411900955282, guid: e833a9d7967a28b479f37602368c0639, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 5542827411900955282, guid: e833a9d7967a28b479f37602368c0639, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
     - target: {fileID: 5747492607648552844, guid: e833a9d7967a28b479f37602368c0639, type: 3}
       propertyPath: m_Name
       value: robot_dialog

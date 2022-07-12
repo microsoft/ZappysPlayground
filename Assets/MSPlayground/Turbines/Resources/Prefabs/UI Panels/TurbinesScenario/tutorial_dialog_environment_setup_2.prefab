@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 779915572, guid: ac4df3b9e5c2a944499b352e4dd3369c, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 170131859332558739, guid: ac4df3b9e5c2a944499b352e4dd3369c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -79,6 +79,14 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: -44
       objectReference: {fileID: 0}
+    - target: {fileID: 2109210374928556795, guid: ac4df3b9e5c2a944499b352e4dd3369c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 2109210374928556795, guid: ac4df3b9e5c2a944499b352e4dd3369c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
     - target: {fileID: 2191649466578849765, guid: ac4df3b9e5c2a944499b352e4dd3369c, type: 3}
       propertyPath: m_Name
       value: tutorial_dialog_environment_setup_2
@@ -95,6 +103,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4183896443222762125, guid: ac4df3b9e5c2a944499b352e4dd3369c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 4183896443222762125, guid: ac4df3b9e5c2a944499b352e4dd3369c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
     - target: {fileID: 4572256345718974305, guid: ac4df3b9e5c2a944499b352e4dd3369c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
