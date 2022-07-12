@@ -288,6 +288,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataSourceTypes: []
   ignoreKeyPathPrefix: 0
+  includeInactiveComponentsInChildren: 0
+  isFixedHierarchyWillUseCachedValues: 1
+  autoAttachAndDetach: 1
   _manageChildren: 0
 --- !u!1 &4450104425804623690
 GameObject:
@@ -499,8 +502,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '{{ tooltip_title }}'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3bfd80fc442f56547a905d031cb44557, type: 2}
-  m_sharedMaterial: {fileID: 3219766048575764384, guid: 3bfd80fc442f56547a905d031cb44557, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+  m_sharedMaterial: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -580,6 +583,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataSourceTypes: []
   ignoreKeyPathPrefix: 0
+  includeInactiveComponentsInChildren: 0
+  isFixedHierarchyWillUseCachedValues: 1
+  autoAttachAndDetach: 1
   _manageChildren: 0
 --- !u!1 &5094256476825728969
 GameObject:
@@ -808,15 +814,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6957379421411788905}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e13188787cfbdc945b510e90e9251420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dynamicFitting: 1
   thisCollider: {fileID: 3568430047823066810}
-  rectTransform: {fileID: 67056275494489340}
+  attachedRectTransform: {fileID: 67056275494489340}
   padding: {x: 0, y: 0}
+  forceUpdateEveryFrame: 0
 --- !u!114 &646677283288576359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,6 +836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 2471923426295637229}
+  _skipOnVR: 0
 --- !u!114 &4208301594184744378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,6 +1220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataSourceTypes: []
   ignoreKeyPathPrefix: 0
+  includeInactiveComponentsInChildren: 0
+  isFixedHierarchyWillUseCachedValues: 1
+  autoAttachAndDetach: 1
   _manageChildren: 0
   _keyPath: tooltip_icon
   _valueToSpriteLookup:
