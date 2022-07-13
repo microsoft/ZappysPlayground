@@ -116,9 +116,17 @@ PrefabInstance:
       value: '{{ text }}'
       objectReference: {fileID: 0}
     - target: {fileID: 4867254332309100895, guid: b0d059d57d3927c45935f5ee25f5fd25, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
+    - target: {fileID: 4867254332309100895, guid: b0d059d57d3927c45935f5ee25f5fd25, type: 3}
       propertyPath: m_fontSizeBase
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 4867254332309100895, guid: b0d059d57d3927c45935f5ee25f5fd25, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
     - target: {fileID: 5081597276886219522, guid: b0d059d57d3927c45935f5ee25f5fd25, type: 3}
       propertyPath: m_RootOrder
       value: 4
