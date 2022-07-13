@@ -37,6 +37,7 @@ namespace MSPlayground.Core.Scenario
         private void OnDestroy()
         {
             DebugMenu.RemoveButton(DEBUG_SKIP_CURRENT_SCENARIO);
+            _currentScenario?.ExitState();
         }
 
         public void RunBeginningScenario()

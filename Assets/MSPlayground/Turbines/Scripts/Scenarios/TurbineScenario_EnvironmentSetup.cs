@@ -2,7 +2,6 @@
 // Licensed under the MIT License.
 
 using System.Collections;
-using System.Net.Mime;
 using Microsoft.MixedReality.Toolkit.SpatialManipulation;
 using MSPlayground.Core;
 using MSPlayground.Core.Spatial;
@@ -30,7 +29,9 @@ namespace MSPlayground.Scenarios.Turbines
 
         private bool _windowPlaced = false;
         private bool _platformPlaced = false;
-
+        [Tooltip("The index of the wall that user chose to place the window and windfarm on")]
+        private int _windowWallIndex = 0;
+        
         public override void EnterState()
         {
             base.EnterState();
@@ -55,15 +56,21 @@ namespace MSPlayground.Scenarios.Turbines
             _scenarioResources.Robot.SetActive(true);
             _scenarioResources.WindowController.gameObject.SetActive(true);
             _scenarioResources.WindowController.EnablePlacement(false);
-            _scenarioResources.WindowPlacementGuide.SetActive(false);
-            _scenarioResources.WindowController.transform.position =  _scenarioResources.WindowPlacementGuide.transform.position;
-            _scenarioResources.WindowController.transform.rotation = _scenarioResources.WindowPlacementGuide.transform.rotation;
+            _scenarioResources.ToggleWindowPlacementGuidesVisibility(false);
+            // Default to the first window placement guide
+            _scenarioResources.WindowController.transform.position =  _scenarioResources.WindowPlacementGuides[0].transform.position;
+            _scenarioResources.WindowController.transform.rotation = _scenarioResources.WindowPlacementGuides[0].transform.rotation;
 
             _scenarioResources.WindfarmController.gameObject.SetActive(true);
             _scenarioResources.WindfarmController.EnablePlacement(false);
             _scenarioResources.PlatformPlacementGuide.SetActive(false);
-            _scenarioResources.WindfarmController.transform.position =  _scenarioResources.PlatformPlacementGuide.transform.position;
-            _scenarioResources.WindfarmController.transform.rotation =  _scenarioResources.PlatformPlacementGuide.transform.rotation;
+#if !VRBUILD
+            // Reorient the windfarm to the default window position
+            // If in VR, this is not necessary as the object positions are fixed.
+            _scenarioResources.PlaceWindfarmGuide(_scenarioResources.VirtualRoom.Walls[0].transform);
+#endif
+            _scenarioResources.WindfarmController.transform.position = _scenarioResources.PlatformPlacementGuide.transform.position;
+            _scenarioResources.WindfarmController.transform.rotation = _scenarioResources.PlatformPlacementGuide.transform.rotation;
 
             _scenarioResources.FocusOnObject(null);
             UISystem.DespawnAllActivePanels();
@@ -73,19 +80,23 @@ namespace MSPlayground.Scenarios.Turbines
         IEnumerator SequenceRoutine()
         {
             VirtualRoom virtualRoom = GameObject.FindObjectOfType<RoomGenerator>().VirtualRoom;
-            _scenarioResources.Robot.SetActive(true);
             _scenarioResources.WindowController.gameObject.SetActive(false);
             _scenarioResources.WindfarmController.gameObject.SetActive(false);
-            _scenarioResources.WindowPlacementGuide.SetActive(false);
+            _scenarioResources.ToggleWindowPlacementGuidesVisibility(false);
             _scenarioResources.PlatformPlacementGuide.SetActive(false);
             
             virtualRoom?.EnablePhysics(true, true, true, true);
 
             yield return WaitForUserToPlaceWindow();
 
+#if !VRBUILD
+            PlaceObjectsRelativeToChosenWindowPlacement();
+#endif            
+            
             yield return WaitForUserToPlacePlatform();
             
-            virtualRoom?.EnablePhysics(false, true, false, true);
+            virtualRoom?.EnablePhysics(true, true, false, true);
+            _scenarioResources.Robot.SetActive(true);
 
             _scenarioResources.FocusOnObject(null);
             UISystem.DespawnAllActivePanels();
@@ -94,7 +105,6 @@ namespace MSPlayground.Scenarios.Turbines
 
         private IEnumerator WaitForUserToPlaceWindow()
         {
-            Transform mainCameraTransform = Camera.main.transform;
             WindowController windowController = _scenarioResources.WindowController;
             GameObject windowControllerGO = windowController.gameObject;
             Transform windowControllerTransform = windowController.transform;
@@ -105,13 +115,13 @@ namespace MSPlayground.Scenarios.Turbines
             windowController.EnablePlacement(true);
             _scenarioResources.FocusOnObject(windowControllerTransform);
                        
-            _scenarioResources.WindowPlacementGuide.SetActive(true);
+            _scenarioResources.ToggleWindowPlacementGuidesVisibility(true);
             do
             {
                 // Wait for the user to place the window into the correct spot
                 yield return null;
             } while (_windowPlaced == false);
-            _scenarioResources.WindowPlacementGuide.SetActive(false);
+            _scenarioResources.ToggleWindowPlacementGuidesVisibility(false);
             windowController.EnablePlacement(false);
             UISystem.DespawnPanel(dialog);
             _windowAudioSource.PlayOneShot(_windowSetSuccessSFX);
@@ -119,11 +129,9 @@ namespace MSPlayground.Scenarios.Turbines
 
         private IEnumerator WaitForUserToPlacePlatform()
         {
-            Transform mainCameraTransform = Camera.main.transform;
             WindfarmController windfarmController = _scenarioResources.WindfarmController;
             Transform windfarmControllerTransform = windfarmController.transform;
 
-            
             GameObject dialog = UISystem.SpawnComplexPanel(DIALOG_ENVIRONMENT_SETUP_STEP_2);
             yield return new WaitForSeconds(_delayBetweenSteps);
             windfarmController.gameObject.SetActive(true);
@@ -162,9 +170,13 @@ namespace MSPlayground.Scenarios.Turbines
 
         private void OnWindowPlacedEvent(WindowManipulationEvent obj)
         {
-            _windowPlaced = obj.PickedUp == false && IsWindowPlacementCorrect();
+            // IsWindowPlacementCorrect() returns a tuple where item 1 is a bool representing whether the placement is valid,
+            // and item 2 is the index of the valid placement guide.
+            (bool, int) windowPlacementCorrect = IsWindowPlacementCorrect();
+            _windowPlaced = obj.PickedUp == false && windowPlacementCorrect.Item1;
             Transform target = _scenarioResources.WindowController.transform;
-            Transform guide = _scenarioResources.WindowPlacementGuide.transform;
+            Transform guide = _scenarioResources.WindowPlacementGuides[windowPlacementCorrect.Item2].transform;
+            _windowWallIndex = windowPlacementCorrect.Item2;
             if (_windowPlaced)
             {
                 // Snap to position
@@ -196,13 +208,35 @@ namespace MSPlayground.Scenarios.Turbines
                 _scenarioResources.FocusOnObject(obj.PickedUp ? guide : target);
             }
         }
-
-        private bool IsWindowPlacementCorrect()
+        
+        /// <summary>
+        /// Checks whether the current window placement is within the bounds of one of the valid placement guides
+        /// </summary>
+        /// <returns>A tuple where:
+        ///     - item 1: represents a bool of whether the placement is valid
+        ///     - item 2: the index of the valid placement guide
+        /// </returns>
+        private (bool, int) IsWindowPlacementCorrect()
         {
             Transform window = _scenarioResources.WindowController.transform;
-            Transform guide = _scenarioResources.WindowPlacementGuide.transform;
-            var collider = guide.GetComponent<BoxCollider>();
-            return collider.bounds.Contains(window.transform.position);
+
+            for (int i=0; i < _scenarioResources.WindowPlacementGuides.Length; i++)
+            {
+                if (_scenarioResources.WindowPlacementGuides[i])
+                {
+                    Transform guideTransform = _scenarioResources.WindowPlacementGuides[i].transform;
+                    var collider = guideTransform.GetComponent<BoxCollider>();
+
+                    bool isValidPlacement = collider.bounds.Contains(window.transform.position);
+                    if (isValidPlacement)
+                    {
+                        return (isValidPlacement, i);
+                    }
+                }
+            }
+
+            // Window placement is invalid
+            return (false, 0);
         }
 
         private bool IsPlatformPlacementCorrect()
@@ -211,6 +245,20 @@ namespace MSPlayground.Scenarios.Turbines
             Transform guide = _scenarioResources.PlatformPlacementGuide.transform;
             var collider = guide.GetComponent<BoxCollider>();
             return collider.bounds.Contains(platform.transform.position);
+        }
+
+        private void PlaceObjectsRelativeToChosenWindowPlacement()
+        {
+            // Place windfarm guide right in front of the window
+            _scenarioResources.PlaceWindfarmGuide(_scenarioResources.VirtualRoom.Walls[_windowWallIndex].transform);
+
+            // Place robot to the left of the windfarm
+            Transform platformGuideTransform = _scenarioResources.PlatformPlacementGuide.transform;
+            _scenarioResources.Robot.transform.position = MathHelpers.Vector3AtYPos(platformGuideTransform.position +
+                platformGuideTransform.right * 0.9f +
+                platformGuideTransform.forward * 0.2f,
+                _scenarioResources.FloorHeight);
+            _scenarioResources.Robot.transform.eulerAngles = new Vector3(0, platformGuideTransform.eulerAngles.y - 45f, 0);
         }
     }
 }

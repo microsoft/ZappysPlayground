@@ -65,6 +65,8 @@ namespace MSPlayground.Core.UI
         [SerializeField] private StatefulInteractable _statefulInteractable = null;
         [Tooltip("Audio source to play on animate in")]
         [SerializeField] private AudioSource _audioSource = null;
+        [Tooltip("GameObjects to activate on Animate In")]
+        [SerializeField] private GameObject[] _activateOnAnimateIn = null;
 
         [Header("Destroy Condition")]
         [Tooltip("Condition to destroy the tooltip")]
@@ -179,6 +181,14 @@ namespace MSPlayground.Core.UI
             {
                 _audioSource.Play();
                 _hasAnimatedInOnce = true;
+            }
+            
+            if (_activateOnAnimateIn != null)
+            {
+                foreach (var obj in _activateOnAnimateIn)
+                {
+                    obj.SetActive(true);
+                }
             }
         }
 #endregion

@@ -82,7 +82,7 @@ namespace MSPlayground.Scenarios.Turbines
         [SerializeField] DirectionalIndicator _directionalIndicator;
         [SerializeField] PowerPanel _powerPanel;
         [SerializeField] GameObject _scenePortal;
-        [SerializeField] GameObject _windowPlacementGuide;
+        [SerializeField] GameObject _windowPlacementGuidePrefab;
         [SerializeField] GameObject _platformPlacementGuide;
         [SerializeField] AudioSource _platformAudioSource;
         [SerializeField] Vector2 _knockoffForce = new Vector2(5f, 15f);
@@ -92,9 +92,12 @@ namespace MSPlayground.Scenarios.Turbines
         GameObject _player;
         GameObject _pendingDebugDialogPrompt;
         TurbinesVRRoom _vrRoom;
+        [Tooltip("In MR, user can place the window on one of many available walls")]
+        private GameObject[] _windowPlacementGuides;
 
         private VirtualRoom _virtualRoom;
-        private VirtualRoom VirtualRoom
+
+        internal VirtualRoom VirtualRoom
         {
             get
             {
@@ -102,6 +105,7 @@ namespace MSPlayground.Scenarios.Turbines
                 {
                     _virtualRoom = GameObject.FindObjectOfType<RoomGenerator>().VirtualRoom;
                 }
+
                 return _virtualRoom;
             }
         }
@@ -114,7 +118,7 @@ namespace MSPlayground.Scenarios.Turbines
         public WindowController WindowController => _windowController;
         public PowerPanel PowerPanel => _powerPanel;
         public WindfarmController WindfarmController => _windfarmController;
-        public GameObject WindowPlacementGuide => _windowPlacementGuide;
+        public GameObject[] WindowPlacementGuides => _windowPlacementGuides;
         public GameObject PlatformPlacementGuide => _platformPlacementGuide;
         public AudioSource PlatformAudioSource => _platformAudioSource;
         public Transform ControlDialogBone => _controlDialogBone;
@@ -265,37 +269,56 @@ namespace MSPlayground.Scenarios.Turbines
 
             float floorHeight = VirtualRoom.Floor.transform.position.y;
             FloorHeight = floorHeight;
+            
+            // Disable robot until windfarm is placed since position is dependent upon that
+            _robot.SetActive(false);
 
             // enable wall physics only
             VirtualRoom.EnablePhysics(true, false, false, false);
             Physics.SyncTransforms();
 
             Transform platformPlacementGuideTransform = _platformPlacementGuide.transform;
-            Transform windowPlacementGuideTransform = _windowPlacementGuide.transform;
 
             // platform offset based off of how far off the ground it floats
             float platformYPos = VirtualRoom.Floor.transform.position.y + 0.85f;
             Vector3 platformHalfExtents = (platformPlacementGuideTransform.GetComponent<BoxCollider>().size * 0.5f);
+            
+            // Make window placement guides for each wall that is wide enough for the platform guide. Reserve the smallest
+            // usable wall for initial placements of the window and windfarm
+            _windowPlacementGuides = new GameObject[VirtualRoom.Walls.Count];
+            
+            BoxCollider windowGuideCollider = _windowPlacementGuidePrefab.GetComponent<BoxCollider>();
+            float windowPlacementGuideWidth = _windowPlacementGuidePrefab.transform.localScale.x * windowGuideCollider.size.x;
 
-            // place the window position at center of longest wall
-            Transform longestWall = VirtualRoom.Walls[0].transform;
-            windowPlacementGuideTransform.position =
-                MathHelpers.Vector3AtYPos(longestWall.position, floorHeight + 1.35f);
-            windowPlacementGuideTransform.rotation = longestWall.rotation;
-            platformPlacementGuideTransform.rotation = Quaternion.LookRotation(-windowPlacementGuideTransform.forward);
-            platformPlacementGuideTransform.position = MathHelpers.Vector3AtYPos(longestWall.position, platformYPos) +
-                                                       platformPlacementGuideTransform.forward * (platformHalfExtents.z + 0.2f) +
-                                                       Vector3.up * platformHalfExtents.y;
+            int smallestValidWallIndex = -1;
+            for (int i = 0; i < VirtualRoom.Walls.Count; i++)
+            {
+                Transform wall = VirtualRoom.Walls[i].transform;
+                
+                /// Only add a window placement guide if wall is wide enough
+                /// or if it is the first wall (walls are sorted in decreasing size so ensure there is at least one on the
+                /// largest wall)
+                if (wall.localScale.x >= windowPlacementGuideWidth || i == 0)
+                {
+                    GameObject newWindowPlacementGuide = GameObject.Instantiate(_windowPlacementGuidePrefab);
+                    Transform windowPlacementGuideTransform = newWindowPlacementGuide.transform;
+                    windowPlacementGuideTransform.position =
+                        MathHelpers.Vector3AtYPos(wall.position, floorHeight + 1.35f);
+                    windowPlacementGuideTransform.rotation = wall.rotation;
+                    _windowPlacementGuides[i] = newWindowPlacementGuide;
+                    smallestValidWallIndex = i;
+                }
+                else
+                {
+                    // Null entry if it is an unusable wall to keep the indexes aligned with the Virtual Room wall indexes 
+                    _windowPlacementGuides[i] = null;
+                }
+            }
 
-            // robot to right side of the window
-            _robot.transform.position = MathHelpers.Vector3AtYPos(platformPlacementGuideTransform.transform.position +
-                platformPlacementGuideTransform.transform.right * 0.9f +
-                platformPlacementGuideTransform.transform.forward * 0.2f,
-                floorHeight);
-            _robot.transform.eulerAngles = new Vector3(0, platformPlacementGuideTransform.eulerAngles.y -45f, 0);
+            // initial placement of the window and windfarm on the smallest valid wall
+            Transform initialPlacementWall = _virtualRoom.Walls[smallestValidWallIndex].transform;
 
-            // initial placement of the window to the left
-            bool rayHit = VirtualRoom.RaycastAgainstRoom(roomCenter.position, -roomCenter.right, 20f,
+            bool rayHit = VirtualRoom.RaycastAgainstRoom(roomCenter.position, initialPlacementWall.position, 20f,
                 out RaycastHit raycastHit);
             Debug.Assert(rayHit, "Raycast missed VirtualRoom");
             if (rayHit)
@@ -305,14 +328,23 @@ namespace MSPlayground.Scenarios.Turbines
                 _windowController.transform.rotation = Quaternion.LookRotation(-raycastHit.normal, Vector3.up);
             }
 
-            // initial placement windfarm of to the left
-            rayHit = VirtualRoom.BoxcastAgainstRoom(roomCenter.position, platformHalfExtents, -roomCenter.right,
-                Quaternion.LookRotation(-roomCenter.right), 20f, out raycastHit);
-            if (rayHit)
+            _windfarmController.transform.rotation =
+                Quaternion.LookRotation(-initialPlacementWall.forward);
+            _windfarmController.transform.position =
+                MathHelpers.Vector3AtYPos(initialPlacementWall.position, platformYPos) +
+                platformPlacementGuideTransform.forward * (platformHalfExtents.z + 0.2f) +
+                Vector3.up * platformHalfExtents.y;
+
+            /// Remove all wall guides on the wall that has the initial window and windfarm. Sometimes room scans duplicate walls
+            /// so removing just the wall at {smallestValidWallIndex} is not sufficient.
+            /// Skip the first window guide, that one needs to remain in case there are no other valid walls.
+            for (int i = 1; i < _windowPlacementGuides.Length; i++)
             {
-                Vector3 collisionPt = roomCenter.position - roomCenter.right * raycastHit.distance;
-                _windfarmController.transform.position = MathHelpers.Vector3AtYPos(collisionPt, platformYPos);
-                _windfarmController.transform.rotation = Quaternion.LookRotation(roomCenter.right, Vector3.up);
+                if (_windowPlacementGuides[i] && _windowPlacementGuides[i].transform.position == _windowController.transform.position)
+                {
+                    Destroy(_windowPlacementGuides[i]);
+                    _windowPlacementGuides[i] = null;
+                }
             }
 
             // disable physics except floor and platforms
@@ -330,9 +362,16 @@ namespace MSPlayground.Scenarios.Turbines
         {
             // set all object transforms from the vrRoom
             _windfarmController.transform.SetPositionAndRotation(_vrRoom.Windfarm.position, _vrRoom.Windfarm.rotation);
-            _platformPlacementGuide.transform.SetPositionAndRotation(_vrRoom.WindfarmGuide.position, _vrRoom.WindfarmGuide.rotation);
+            _platformPlacementGuide.transform.SetPositionAndRotation(_vrRoom.WindfarmGuide.position,
+                _vrRoom.WindfarmGuide.rotation);
             _windowController.transform.SetPositionAndRotation(_vrRoom.Window.position, _vrRoom.Window.rotation);
-            _windowPlacementGuide.transform.SetPositionAndRotation(_vrRoom.WindowGuide.position, _vrRoom.WindowGuide.rotation);
+
+            // Instantiate window placement guide from prefab
+            // Positions are fixed in VR room, only spawn 1 window placement guide
+            _windowPlacementGuides = new GameObject[] {GameObject.Instantiate(_windowPlacementGuidePrefab)};
+            _windowPlacementGuides[0].transform
+                .SetPositionAndRotation(_vrRoom.WindowGuide.position, _vrRoom.WindowGuide.rotation);
+            _robot.SetActive(true);
             _robot.transform.SetPositionAndRotation(_vrRoom.Robot.position, _vrRoom.Robot.rotation);
 
             // Set walls to interact with the Window's Clipping Primitive
@@ -351,11 +390,10 @@ namespace MSPlayground.Scenarios.Turbines
 
             WindowController.gameObject.SetActive(false);
             WindfarmController.gameObject.SetActive(false);
-            WindowPlacementGuide.SetActive(false);
+            ToggleWindowPlacementGuidesVisibility(false);
             PlatformPlacementGuide.SetActive(false);
 
             UISystem.DespawnAllActivePanels();
-            _robot.SetActive(true);
             PlatformGameObject.SetActive(false);
 
             for (int i = 0; i < _turbineInitalPositions.Length; ++i)
@@ -386,7 +424,7 @@ namespace MSPlayground.Scenarios.Turbines
                 turbine.ShowTurbine(show);
             }
         }
-        
+
         /// <summary>
         /// Mute or unmute all turbine instances
         /// </summary>
@@ -423,7 +461,8 @@ namespace MSPlayground.Scenarios.Turbines
         /// </summary>
         /// <param name="panelId"></param>
         /// <returns></returns>
-        public GameObject ShowRobotDialog(string panelId, Transform bone, Dictionary<string, IVariable> localVariables = null)
+        public GameObject ShowRobotDialog(string panelId, Transform bone,
+            Dictionary<string, IVariable> localVariables = null)
         {
             if (UISystem.SpawnComplexPanel(panelId, out GameObject dialogGameObject,
                     out DataSourceGODictionary dataSource, localVariables))
@@ -595,12 +634,42 @@ namespace MSPlayground.Scenarios.Turbines
         {
             _powerPanel.KnockOffTurbines();
 
-            Vector3 force = MathHelpers.Vector3AtYPos(_windfarmController.transform.forward * _knockoffForce.x, _knockoffForce.y);
+            Vector3 force = MathHelpers.Vector3AtYPos(_windfarmController.transform.forward * _knockoffForce.x,
+                _knockoffForce.y);
 
             foreach (TurbineController turbineController in Turbines)
             {
                 turbineController.KnockOffWindfarm(force);
             }
+        }
+
+        public void ToggleWindowPlacementGuidesVisibility(bool show)
+        {
+            foreach (var guide in _windowPlacementGuides)
+            {
+                if (guide)
+                {
+                    guide.SetActive(show);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Place and orient the windfarm guide relative to the given wall transform
+        /// </summary>
+        public void PlaceWindfarmGuide(Transform wall)
+        {
+            Transform platformPlacementGuideTransform = _platformPlacementGuide.transform;
+            // platform offset based off of how far off the ground it floats
+            float platformYPos = VirtualRoom.Floor.transform.position.y + 0.85f;
+            Vector3 platformHalfExtents = (platformPlacementGuideTransform.GetComponent<BoxCollider>().size * 0.5f);
+
+            platformPlacementGuideTransform.rotation =
+                Quaternion.LookRotation(-_windowController.transform.forward);
+            platformPlacementGuideTransform.position =
+                MathHelpers.Vector3AtYPos(wall.position, platformYPos) +
+                platformPlacementGuideTransform.forward * (platformHalfExtents.z + 0.2f) +
+                Vector3.up * platformHalfExtents.y;
         }
     }
 }
