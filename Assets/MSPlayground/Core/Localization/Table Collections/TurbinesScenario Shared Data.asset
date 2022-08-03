@@ -43,10 +43,16 @@ MonoBehaviour:
     m_Key: environment_setup_title_part_1
     m_Metadata:
       m_Items: []
-  - m_Id: 10076497866027008
+  - m_Id: 31428883660804096
     m_Key: environment_setup_desc_part_1
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 0
+  - m_Id: 10076497866027008
+    m_Key: environment_setup_desc_part_1_vr
+    m_Metadata:
+      m_Items:
+      - id: 1
   - m_Id: 10076497866027009
     m_Key: environment_setup_title_part_2
     m_Metadata:
@@ -274,10 +280,18 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    id: 0
+    id: 2
   references:
     version: 1
     00000000:
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: In VR there is only one possible window guide
+    00000001:
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: In MR user can place on any available wall (multiple guides)
+    00000002:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1648517305213

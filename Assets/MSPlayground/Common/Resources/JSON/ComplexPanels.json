@@ -73,22 +73,22 @@
     "id": "robot_dialog_theres_an_issue_with_gearbox",
     "prefab": "TurbinesScenario/robot_dialog_pointer",
     "text": "TurbinesScenario/robot_dialog_theres_an_issue_with_gearbox",
-	"override":
-	{
-		"vr" :
-		{
-			"text": "TurbinesScenario/robot_dialog_theres_an_issue_with_gearbox_vr",
-		}
-	}	
+    "override":
+    {
+      "vr" :
+      {
+        "text": "TurbinesScenario/robot_dialog_theres_an_issue_with_gearbox_vr",
+      }
+    }
   },
   {
     "id": "tutorial_dialog_repair_broken_parts",
     "prefab": "TurbinesScenario/tutorial_dialog_repair_broken_parts"
   },
   {
-	"id": "temp_save_anchors",
-	"prefab": "HubScenario/temp_hub_dialog",
-	"text": "HubScenario/temp_save_anchors"
+    "id": "temp_save_anchors",
+    "prefab": "HubScenario/temp_hub_dialog",
+    "text": "HubScenario/temp_save_anchors"
   },
   {
     "id": "hub_enter_name",
@@ -100,8 +100,8 @@
     "text": ""
   },
   {
-	"id": "temp_ready",
-	"prefab": "HubScenario/temp_hub_dialog"
+    "id": "temp_ready",
+    "prefab": "HubScenario/temp_hub_dialog"
   },
   {
     "id": "tutorial_dialog_volumetric_layout",
@@ -178,12 +178,12 @@
     "tooltip_desc": "Tooltips/desc_gaze",
     "tooltip_icon": "gaze"
   },
-   {
-	"id": "hub_searching_for_anchors",
-     "prefab": "HubScenario/panel_env_scan_searching",
-     "searching": "HubScenario/searching_for_anchors",
-     "title": "HubScenario/environment_scan",
-     "text": "HubScenario/searching_for_anchors_desc"
+  {
+    "id": "hub_searching_for_anchors",
+    "prefab": "HubScenario/panel_env_scan_searching",
+    "searching": "HubScenario/searching_for_anchors",
+    "title": "HubScenario/environment_scan",
+    "text": "HubScenario/searching_for_anchors_desc"
   },
   {
     "id": "hub_anchors_found",
@@ -193,36 +193,43 @@
     "yes": "UI/continue",
     "no": "HubScenario/reject_scan"
   },
-   {
-	"id": "hub_saving_anchors",
-	"prefab": "HubScenario/panel_env_saving_anchors",
-	"text": "HubScenario/saving_anchors",
-	"title": "HubScenario/room_scan_complete"
+  {
+    "id": "hub_saving_anchors",
+    "prefab": "HubScenario/panel_env_saving_anchors",
+    "text": "HubScenario/saving_anchors",
+    "title": "HubScenario/room_scan_complete"
   },
-   {
-	"id": "hub_failed_to_find_anchor",
-	"prefab": "HubScenario/temp_hub_dialog",
-	"text": "HubScenario/failed_to_find_anchor"
+  {
+    "id": "hub_failed_to_find_anchor",
+    "prefab": "HubScenario/temp_hub_dialog",
+    "text": "HubScenario/failed_to_find_anchor"
   },
-   {
-	"id": "hub_lets_scan_your_space",
-	"prefab": "HubScenario/panel_env_scan",
-	"title": "HubScenario/environment_scan",
-	"text": "HubScenario/lets_scan_your_space",
-	"cta": "UI/start"
+  {
+    "id": "hub_lets_scan_your_space",
+    "prefab": "HubScenario/panel_env_scan",
+    "title": "HubScenario/environment_scan",
+    "text": "HubScenario/lets_scan_your_space",
+    "cta": "UI/start"
   },
-   {
-	"id": "hub_lets_rescan_your_space",
-     "prefab": "HubScenario/panel_env_scan",
-     "title": "HubScenario/environment_scan",
-     "text": "HubScenario/lets_rescan_your_space",
-     "cta": "UI/start"
+  {
+    "id": "hub_lets_rescan_your_space",
+    "prefab": "HubScenario/panel_env_scan",
+    "title": "HubScenario/environment_scan",
+    "text": "HubScenario/lets_rescan_your_space",
+    "cta": "UI/start"
   },
   {
     "id": "tutorial_dialog_environment_setup_1",
     "prefab": "TurbinesScenario/tutorial_dialog_environment_setup_1",
     "title_text": "TurbinesScenario/environment_setup_title_part_1",
-    "content_text": "TurbinesScenario/environment_setup_desc_part_1"
+    "content_text": "TurbinesScenario/environment_setup_desc_part_1",
+    "override":
+    {
+      "vr" :
+      {
+        "content_text": "TurbinesScenario/environment_setup_desc_part_1_vr"
+      }
+    }
   },
   {
     "id": "tutorial_dialog_environment_setup_2",
